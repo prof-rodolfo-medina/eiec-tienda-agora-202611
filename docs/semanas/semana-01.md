@@ -11,7 +11,7 @@ Arrancar con el entorno listo, el proyecto en las manos de cada equipo y un diag
 ## Antes de la sesión
 
 1. Leer el Tema 1 (apartados 1.3 a 1.5: antipatrones, integración vs. entrega vs. despliegue, madurez) y el Tema 2 (2.5 buenas prácticas).
-2. Crear o verificar estas cuentas con el correo `@comunidadunir.net` cuando aplique:
+2. Crear o verificar estas cuentas. **Recuerda: como estudiante de UNIR tienes acceso gratuito a Azure y AWS**, sin tarjeta, si te registras con tu correo `@comunidadunir.net` ([instrucciones de registro](../nube/registro-aws-azure.md)):
    - GitHub (personal).
    - **Azure for Students**: <https://azure.microsoft.com/es-es/free/students/> (sin tarjeta). Ver [nube/azure.md](../nube/azure.md).
    - **AWS Educate**: <https://aws.amazon.com/es/education/awseducate/>. Ver [nube/aws.md](../nube/aws.md).
@@ -86,4 +86,4 @@ Responde en la bitácora: ¿qué commit introdujo el error?, ¿por qué su mensa
 
 - Tener abierto un Codespace del repositorio del curso antes de la sesión.
 - Preparar la tabla de equipos en Moodle (o un issue fijado) para que cada equipo registre su fork.
-- Recordar en la sesión que las altas en la nube se hacen con el correo institucional.
+- Dedicar un minuto de la sesión a explicar el beneficio de acceso gratuito a Azure y AWS: muchos estudiantes no lo conocen. Mostrar [registro-aws-azure.md](../nube/registro-aws-azure.md).

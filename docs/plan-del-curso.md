@@ -81,7 +81,7 @@ Las plantillas listas para copiar están en [`pipelines/`](../pipelines/).
 
 **Principio:** la nube es un destino de despliegue, no una dependencia del aprendizaje. Si una cuenta falla, el laboratorio se completa con Codespaces + Docker + GHCR y se documenta qué cambiaría en la nube ([nube/plan-b.md](nube/plan-b.md)).
 
-Guías: [Azure](nube/azure.md) · [AWS](nube/aws.md) · [Plan B](nube/plan-b.md)
+Guías: [Registro gratuito en AWS y Azure](nube/registro-aws-azure.md) · [Azure](nube/azure.md) · [AWS](nube/aws.md) · [Plan B](nube/plan-b.md)
 
 ## 7. Evidencias y seguimiento
 

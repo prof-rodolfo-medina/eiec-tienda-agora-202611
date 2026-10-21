@@ -7,6 +7,10 @@ Es, a la vez, la **portada del curso** y el **proyecto conductor**: cada estudia
 
 [![CI - fase de commit](https://github.com/prof-rodolfo-medina/eiec-tienda-agora-202611/actions/workflows/ci.yml/badge.svg)](https://github.com/prof-rodolfo-medina/eiec-tienda-agora-202611/actions/workflows/ci.yml)
 
+> [!IMPORTANT]
+> **Como estudiante de UNIR tienes acceso gratuito a Microsoft Azure y a AWS**, sin pagos personales y sin tarjeta bancaria. Solo tienes que registrarte con tu correo **@comunidadunir.net**.
+> Cómo hacerlo, paso a paso: **[Registro para uso de AWS y Microsoft Azure](docs/nube/registro-aws-azure.md)**. Hazlo en la semana 1.
+
 ## Calendario
 
 Sesiones síncronas: **propuesta** de jueves; se confirmará con la programación oficial.
@@ -78,7 +82,7 @@ BITACORA.md             evidencia semanal de cada fork
 | **AWS Educate** | Laboratorios guiados en consola: misma imagen en EC2 (despliegue inmutable) | [docs/nube/aws.md](docs/nube/aws.md) |
 | **Sin nube** | Codespaces + Docker + GHCR | [docs/nube/plan-b.md](docs/nube/plan-b.md) |
 
-Regístrate en ambas con tu correo **@comunidadunir.net** durante la semana 1. Lo que se crea en la nube se elimina al terminar (`infra/azure/limpiar.sh`).
+Regístrate en ambas con tu correo **@comunidadunir.net** durante la semana 1 ([instrucciones de registro](docs/nube/registro-aws-azure.md)). Lo que se crea en la nube se elimina al terminar (`infra/azure/limpiar.sh`).
 
 ## Proyecto
 
