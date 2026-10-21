@@ -1,0 +1,18 @@
+# Levanta Jenkins en tu equipo, en un Codespace o en una VM de Azure/AWS:
+#   cd pipelines/jenkins && docker compose up -d --build
+#   docker compose logs jenkins | grep -A2 "initialAdminPassword"   # contraseña inicial
+# Abre http://localhost:8080 (en Codespaces, la pestaña "Ports" publica el puerto).
+#
+# Para que el trabajo encuentre un agente con la etiqueta "python":
+#   Manage Jenkins > Nodes > Built-In Node > Configure > Labels: python
+services:
+  jenkins:
+    build: .
+    container_name: jenkins-agora
+    ports:
+      - "8080:8080"
+    volumes:
+      - jenkins_home:/var/jenkins_home
+
+volumes:
+  jenkins_home:

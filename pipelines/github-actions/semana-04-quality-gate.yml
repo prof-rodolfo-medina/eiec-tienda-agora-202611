@@ -1,0 +1,52 @@
+# SEMANA 4 · Tema 6 · Puerta de calidad (quality gate)
+# Copia este archivo a .github/workflows/quality.yml en tu fork.
+#
+# Añade tres señales de calidad al Pull Request:
+#   1. Umbral de cobertura (--cov-fail-under). Ajusta COVERAGE_MIN con tu equipo.
+#   2. Resumen de cobertura visible en la pestaña "Summary" del run.
+#   3. (Opcional) Análisis con SonarQube Cloud, gratuito para repos públicos.
+#      Requiere el secreto SONAR_TOKEN y el archivo sonar-project.properties.
+name: Quality gate
+
+on:
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+env:
+  COVERAGE_MIN: "90"
+  SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+
+jobs:
+  coverage-gate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          fetch-depth: 0  # SonarQube necesita el historial para el análisis de PR
+
+      - uses: actions/setup-python@v7
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - run: pip install -r requirements-dev.txt
+
+      - name: Pruebas con umbral de cobertura
+        run: |
+          python -m pytest -q --cov=app --cov-report=xml:coverage.xml \
+            --cov-report=term-missing --cov-fail-under=${COVERAGE_MIN} | tee cov.txt
+
+      - name: Resumen en el run
+        if: always()
+        run: |
+          echo "## Cobertura (mínimo acordado: ${COVERAGE_MIN} %)" >> "$GITHUB_STEP_SUMMARY"
+          echo '```' >> "$GITHUB_STEP_SUMMARY"
+          grep -E "^(Name|app/|TOTAL)" cov.txt >> "$GITHUB_STEP_SUMMARY" || true
+          echo '```' >> "$GITHUB_STEP_SUMMARY"
+
+      - name: SonarQube Cloud (opcional)
+        if: ${{ env.SONAR_TOKEN != '' }}
+        uses: SonarSource/sonarqube-scan-action@v8

@@ -1,0 +1,82 @@
+# SEMANA 6 · Tema 8 · El pipeline equivalente en GitLab CI/CD.
+# Uso: importa o espeja tu fork en GitLab.com (plan gratuito) y copia este archivo
+# a la RAÍZ del repositorio como .gitlab-ci.yml. GitLab lo detecta solo.
+#
+# Compara con GitHub Actions y Jenkins: mismas fases, distinta sintaxis.
+# Cada job corre en un runner distinto: lo que un job necesita de otro viaja como artefacto.
+
+stages:
+  - static-analysis
+  - test
+  - build
+  - release
+
+default:
+  image: python:3.12-slim
+  before_script:
+    - pip install -q -r requirements-dev.txt
+
+variables:
+  APP_ENV: ci
+  PIP_CACHE_DIR: "$CI_PROJECT_DIR/.cache/pip"
+
+cache:
+  paths:
+    - .cache/pip
+
+lint:
+  stage: static-analysis
+  script:
+    - flake8 app tests
+
+test-unit:
+  stage: test
+  script:
+    - python -m pytest -q -m unit --junitxml=reports/unit.xml
+  artifacts:
+    when: always
+    reports:
+      junit: reports/unit.xml
+
+test-api:
+  stage: test
+  script:
+    - python -m pytest -q -m api --junitxml=reports/api.xml --cov=app --cov-report=term --cov-report=xml:reports/coverage.xml
+  coverage: '/TOTAL.*\s+(\d+%)$/'
+  artifacts:
+    when: always
+    reports:
+      junit: reports/api.xml
+      coverage_report:
+        coverage_format: cobertura
+        path: reports/coverage.xml
+
+build-image:
+  stage: build
+  image: docker:27
+  services:
+    - docker:27-dind
+  before_script: []
+  variables:
+    IMAGE: $CI_REGISTRY_IMAGE:sha-$CI_COMMIT_SHORT_SHA
+  script:
+    - echo "$CI_REGISTRY_PASSWORD" | docker login -u "$CI_REGISTRY_USER" --password-stdin "$CI_REGISTRY"
+    - docker build --build-arg APP_VERSION=0.0.0-sha.$CI_COMMIT_SHORT_SHA --build-arg GIT_SHA=$CI_COMMIT_SHA -t "$IMAGE" .
+    - docker push "$IMAGE"
+  rules:
+    - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
+
+release-image:
+  # Promoción sin reconstruir: la imagen probada se re-etiqueta con la versión.
+  stage: release
+  image: docker:27
+  services:
+    - docker:27-dind
+  before_script: []
+  script:
+    - echo "$CI_REGISTRY_PASSWORD" | docker login -u "$CI_REGISTRY_USER" --password-stdin "$CI_REGISTRY"
+    - docker pull "$CI_REGISTRY_IMAGE:sha-$CI_COMMIT_SHORT_SHA"
+    - docker tag "$CI_REGISTRY_IMAGE:sha-$CI_COMMIT_SHORT_SHA" "$CI_REGISTRY_IMAGE:$CI_COMMIT_TAG"
+    - docker push "$CI_REGISTRY_IMAGE:$CI_COMMIT_TAG"
+  rules:
+    - if: $CI_COMMIT_TAG

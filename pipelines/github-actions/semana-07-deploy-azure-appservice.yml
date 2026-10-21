@@ -1,0 +1,106 @@
+# SEMANA 7 · Tema 10 (I) · Entrega continua a Azure App Service
+# Copia este archivo a .github/workflows/deploy-azure.yml en tu fork.
+#
+# Flujo:  build (paquete único) -> staging (auto) -> smoke -> production (aprobación) -> smoke
+#
+# Requisitos (ver docs/nube/azure.md):
+#   1. Dos Web Apps Linux, plan F1 (gratuito), Python 3.12: una para staging y otra para production.
+#      Puedes crearlas con infra/azure/crear-app-service.sh desde Azure Cloud Shell.
+#   2. En GitHub > Settings > Environments crea "staging" y "production".
+#      - En cada entorno, el secreto AZURE_WEBAPP_PUBLISH_PROFILE (perfil de publicación de su Web App).
+#      - En cada entorno, las variables AZURE_WEBAPP_NAME y BASE_URL.
+#      - En "production", activa "Required reviewers": esa es tu puerta manual de liberación.
+#
+# Se usa el perfil de publicación porque no requiere crear identidades en Microsoft Entra ID,
+# algo que el tenant institucional puede restringir a estudiantes.
+name: Deploy - Azure App Service
+
+on:
+  workflow_run:
+    workflows: ["CI - fase de commit"]
+    types: [completed]
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  package:
+    # Solo se empaqueta si la fase de commit terminó en verde.
+    if: ${{ github.event_name == 'workflow_dispatch' || github.event.workflow_run.conclusion == 'success' }}
+    runs-on: ubuntu-latest
+    outputs:
+      version: ${{ steps.v.outputs.version }}
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          ref: ${{ github.event.workflow_run.head_sha || github.sha }}
+
+      - id: v
+        run: echo "version=0.1.0+$(git rev-parse --short HEAD)" >> "$GITHUB_OUTPUT"
+
+      - name: Grabar versión y commit dentro del artefacto (trazabilidad)
+        run: |
+          echo "{\"version\": \"${{ steps.v.outputs.version }}\", \"commit\": \"$(git rev-parse HEAD)\"}" \
+            > app/build_info.json
+          cat app/build_info.json
+
+      - name: Empaquetar UNA vez (el mismo zip irá a staging y a producción)
+        run: zip -r agora.zip app requirements.txt
+
+      - uses: actions/upload-artifact@v7
+        with:
+          name: agora-package
+          path: agora.zip
+          retention-days: 7
+
+  deploy-staging:
+    needs: package
+    runs-on: ubuntu-latest
+    environment:
+      name: staging
+      url: ${{ vars.BASE_URL }}
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/download-artifact@v8
+        with:
+          name: agora-package
+
+      - name: Desplegar en staging
+        uses: azure/webapps-deploy@v3
+        with:
+          app-name: ${{ vars.AZURE_WEBAPP_NAME }}
+          publish-profile: ${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE }}
+          package: agora.zip
+
+      - name: Smoke test en staging
+        env:
+          BASE_URL: ${{ vars.BASE_URL }}
+          RETRIES: "20"
+        run: bash scripts/smoke_test.sh
+
+  deploy-production:
+    needs: deploy-staging
+    runs-on: ubuntu-latest
+    environment:
+      name: production   # con "Required reviewers" aquí se detiene hasta que alguien apruebe
+      url: ${{ vars.BASE_URL }}
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/download-artifact@v8
+        with:
+          name: agora-package
+
+      - name: Desplegar en producción (mismo artefacto que staging)
+        uses: azure/webapps-deploy@v3
+        with:
+          app-name: ${{ vars.AZURE_WEBAPP_NAME }}
+          publish-profile: ${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE }}
+          package: agora.zip
+
+      - name: Smoke test en producción
+        env:
+          BASE_URL: ${{ vars.BASE_URL }}
+          RETRIES: "20"
+        run: bash scripts/smoke_test.sh

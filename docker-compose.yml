@@ -1,0 +1,14 @@
+# Entorno local tipo "producción": la misma imagen que construye el pipeline.
+#   docker compose up --build
+services:
+  api:
+    build:
+      context: .
+      args:
+        APP_VERSION: 0.1.0-local
+        GIT_SHA: local
+    ports:
+      - "8000:8000"
+    environment:
+      APP_ENV: local
+      FEATURE_DISCOUNT_CODES: "false"

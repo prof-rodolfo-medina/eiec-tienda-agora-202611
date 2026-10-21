@@ -1,0 +1,71 @@
+# SEMANA 8 · Tema 10 (II) · Modelos de despliegue con Azure Container Apps
+# Copia este archivo a .github/workflows/canary.yml en tu fork. OPCIONAL / AVANZADO.
+#
+# Despliega la imagen publicada en GHCR (semana 6) como una NUEVA REVISIÓN y reparte el
+# tráfico entre la revisión estable y la nueva (canary). Después, promueve o revierte.
+#
+#   accion=canary   -> crea la revisión nueva con el % de tráfico indicado
+#   accion=promote  -> manda el 100 % del tráfico a la revisión nueva
+#   accion=rollback -> devuelve el 100 % del tráfico a la revisión estable
+#
+# Requiere iniciar sesión en Azure con OIDC (sin contraseñas): una identidad de Entra ID
+# con credencial federada para este repositorio y los secretos AZURE_CLIENT_ID,
+# AZURE_TENANT_ID y AZURE_SUBSCRIPTION_ID. Si el tenant institucional no te permite
+# crear la identidad, ejecuta los mismos comandos desde Azure Cloud Shell con
+# infra/azure/containerapps-canary.sh: el aprendizaje es idéntico.
+name: Deploy - canary en Container Apps
+
+on:
+  workflow_dispatch:
+    inputs:
+      accion:
+        description: "canary | promote | rollback"
+        required: true
+        default: canary
+        type: choice
+        options: [canary, promote, rollback]
+      imagen_tag:
+        description: "Etiqueta de la imagen en GHCR (por ejemplo sha-1a2b3c4 o 1.1.0)"
+        required: false
+      porcentaje:
+        description: "Porcentaje de tráfico para la revisión nueva"
+        required: false
+        default: "10"
+
+permissions:
+  id-token: write
+  contents: read
+
+env:
+  RESOURCE_GROUP: ${{ vars.AZURE_RESOURCE_GROUP }}
+  APP_NAME: ${{ vars.AZURE_CONTAINERAPP_NAME }}
+
+jobs:
+  traffic:
+    runs-on: ubuntu-latest
+    environment: production
+    steps:
+      - uses: actions/checkout@v7
+
+      - uses: azure/login@v3
+        with:
+          client-id: ${{ secrets.AZURE_CLIENT_ID }}
+          tenant-id: ${{ secrets.AZURE_TENANT_ID }}
+          subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
+
+      - name: Ejecutar acción
+        env:
+          ACCION: ${{ inputs.accion }}
+          TAG: ${{ inputs.imagen_tag }}
+          PCT: ${{ inputs.porcentaje }}
+          IMAGE_REPO: ghcr.io/${{ github.repository }}
+        run: |
+          IMAGE_REPO="${IMAGE_REPO,,}"
+          bash infra/azure/containerapps-canary.sh "$ACCION" "$TAG" "$PCT"
+
+      - name: Smoke test sobre la URL pública
+        if: ${{ inputs.accion != 'canary' }}
+        run: |
+          FQDN=$(az containerapp show -g "$RESOURCE_GROUP" -n "$APP_NAME" \
+                 --query properties.configuration.ingress.fqdn -o tsv)
+          BASE_URL="https://${FQDN}" RETRIES=20 bash scripts/smoke_test.sh

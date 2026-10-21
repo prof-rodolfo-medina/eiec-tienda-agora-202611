@@ -1,0 +1,22 @@
+# SEMANA 6 · Tema 9 · Referencia comparativa con CircleCI (opcional).
+# Para probarlo: conecta tu fork en circleci.com y copia este archivo a .circleci/config.yml.
+version: 2.1
+
+jobs:
+  commit-stage:
+    docker:
+      - image: cimg/python:3.12
+    steps:
+      - checkout
+      - run: pip install -r requirements-dev.txt
+      - run: flake8 app tests
+      - run: python -m pytest -q --junitxml=reports/junit.xml --cov=app
+      - store_test_results:
+          path: reports
+      - store_artifacts:
+          path: reports
+
+workflows:
+  ci:
+    jobs:
+      - commit-stage

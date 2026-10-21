@@ -1,0 +1,48 @@
+# Fase de commit (Tema 4): lint + pruebas + informes, en cada push y Pull Request.
+# Es el pipeline mínimo con el que arranca el curso. En las semanas siguientes
+# se amplía con las plantillas de pipelines/github-actions/.
+name: CI - fase de commit
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  commit-stage:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout del código
+        uses: actions/checkout@v7
+
+      - name: Preparar Python
+        uses: actions/setup-python@v7
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Instalar dependencias
+        run: pip install -r requirements-dev.txt
+
+      - name: Análisis estático (flake8)
+        run: flake8 app tests
+
+      - name: Pruebas unitarias y de API con cobertura
+        run: |
+          python -m pytest -q \
+            --junitxml=reports/junit.xml \
+            --cov=app --cov-report=term-missing --cov-report=xml:reports/coverage.xml
+
+      - name: Publicar informes como artefacto
+        if: always()
+        uses: actions/upload-artifact@v7
+        with:
+          name: informes-pruebas-${{ github.sha }}
+          path: reports/
+          retention-days: 14

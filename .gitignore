@@ -1,0 +1,12 @@
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.coverage
+coverage.xml
+htmlcov/
+reports/
+*.zip
+.env
+.DS_Store
+app/build_info.json
