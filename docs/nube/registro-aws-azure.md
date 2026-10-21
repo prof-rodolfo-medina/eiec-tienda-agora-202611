@@ -12,7 +12,7 @@
 
 ---
 
-*Contenido del documento institucional "Registro para uso de AWS y Microsoft Azure":*
+*Contenido del documento institucional "Registro para uso de AWS y Microsoft Azure"* · 📄 [Descargar el documento original (Word)](Registro-uso-AWS-y-Microsoft-Azure.docx)
 
 Se cuentan con opciones para que los estudiantes puedan trabajar tanto en Microsoft Azure como en AWS sin que tengan que hacer pagos personales. Lo importante es que se registren con su correo institucional de **comunidadunir.net**.
 
