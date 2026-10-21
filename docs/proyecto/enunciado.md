@@ -57,7 +57,7 @@ GET  /carts/{id}/total?code=     total; los códigos de descuento dependen del f
 | 5 | Otra herramienta | El pipeline corre en Jenkins desde el Jenkinsfile del repositorio |
 | 6 | Artefactos | Imagen `1.0.0` en GHCR trazable a su commit |
 | 7 | Entrega continua | Staging y producción en la nube, con aprobación manual y smoke tests |
-| 8 | Despliegue controlado | Feature flag sin redeploy, rollback ensayado, demo final, diagnóstico final y nube limpia |
+| 8 | Despliegue controlado | Antes del miércoles 27 (el examen es el jueves 28 o viernes 29): feature flag sin redeploy, demo final en video, diagnóstico final y nube limpia |
 
 Cada guía semanal en [`docs/semanas/`](../semanas/) detalla además los niveles **intermedio** y **avanzado** para quien quiera perfeccionar su proyecto.
 

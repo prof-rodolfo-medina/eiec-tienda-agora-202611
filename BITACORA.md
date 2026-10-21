@@ -50,4 +50,4 @@
 
 ## Semana 7
 
-## Semana 8 · Demo final, diagnóstico final y limpieza de nube
+## Semana 8 · Demo final (video), diagnóstico final y limpieza de nube · entrega: miércoles 27

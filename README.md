@@ -25,7 +25,7 @@ Sesiones síncronas: **propuesta** de jueves; se confirmará con la programació
 | 5 | 4 – 10 ene | T7 Jenkins | El mismo pipeline como Jenkinsfile | [semana-05](docs/semanas/semana-05.md) |
 | 6 | 11 – 17 ene | T8 GitLab · T9 Artefactos | Imagen única versionada en GHCR; GitLab CI | [semana-06](docs/semanas/semana-06.md) |
 | 7 | 18 – 24 ene | T10 Despliegue (I) | Staging → aprobación → producción en **Azure**; EC2 en **AWS** | [semana-07](docs/semanas/semana-07.md) |
-| 8 | 25 – 31 ene | T10 Despliegue (II) · Cierre | Feature flags, canary, rollback, demo final | [semana-08](docs/semanas/semana-08.md) |
+| 8 | 25 – 31 ene | T10 Despliegue (II) · Cierre · **Examen final (jue 28 o vie 29)** | Feature flags, canary, demo final en video; repaso para el examen | [semana-08](docs/semanas/semana-08.md) · [repaso](docs/semanas/repaso-examen.md) |
 
 Plan completo (resultados de aprendizaje, enfoque, nube, riesgos): **[docs/plan-del-curso.md](docs/plan-del-curso.md)**
 

@@ -2,6 +2,7 @@
 
 ## Antes del 23 de noviembre de 2026
 
+- [ ] Confirmar con la coordinación el día del examen final (jue 28 o vie 29 de enero) y si la sesión de la semana 8 puede ser el martes 26.
 - [ ] Confirmar con la coordinación horario de sesiones síncronas y receso (actualizar la tabla del [plan](../plan-del-curso.md#4-calendario) y el README).
 - [ ] Preguntar si se puede habilitar un aula de **AWS Academy Learner Lab** para la asignatura.
 - [ ] Probar con una cuenta `@comunidadunir.net` que Azure for Students se activa y que Cloud Shell funciona.

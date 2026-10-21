@@ -48,11 +48,13 @@ Las fechas de sesión síncrona son una **propuesta** (jueves, como en la edici�
 | 5 | 4 – 10 ene 2027 | jue 7 ene | T7 Jenkins | Jenkins en contenedor y el mismo pipeline como Jenkinsfile | Captura del Stage View + informe JUnit en Jenkins | Opcional: Jenkins en VM de Azure o EC2 |
 | 6 | 11 – 17 ene | jue 14 ene | T8 GitLab · T9 Otras herramientas y artefactos | Imagen Docker única en GHCR con versión semántica; pipeline equivalente en GitLab | Etiqueta `v1.0.0` + imagen publicada + pipeline de GitLab verde | GHCR (gratuito) |
 | 7 | 18 – 24 ene | jue 21 ene | T10 Modelos de despliegue (I): entrega continua | Staging y producción en Azure App Service con aprobación manual y smoke tests; ruta AWS con EC2 | URL de staging y producción respondiendo `/version` | **Azure** App Service F1 · **AWS** EC2 (laboratorio) |
-| 8 | 25 – 31 ene | jue 28 ene | T10 Modelos de despliegue (II): canary, blue/green, feature flags, rollback · Cierre | Feature flag sin redeploy, canary y rollback; demostración final; diagnóstico de madurez final; limpieza de recursos | Demo final + retrospectiva + recursos de nube eliminados | Azure Container Apps (opcional) |
+| 8 | 25 – 31 ene | **mar 26 ene** (adelantada por el examen) | T10 Modelos de despliegue (II): canary, blue/green, feature flags, rollback · Repaso · **Examen final: jue 28 o vie 29** | Feature flag sin redeploy y canary; demo final en video; diagnóstico de madurez final; limpieza de recursos, todo antes del miércoles 27 | Video de la demo + diagnóstico final + recursos de nube eliminados (mié 27) | Azure Container Apps (opcional) |
+
+> **Examen final:** jueves 28 o viernes 29 de enero de 2027. Por eso la sesión de la semana 8 se adelanta al martes 26, las entregas prácticas cierran el miércoles 27 y la demostración final es un video. La [guía de repaso](semanas/repaso-examen.md) conecta los 10 temas con el proyecto.
 
 > **Si el receso no ocurre**, las semanas 5 a 8 se recorren dos semanas: el curso terminaría la semana del 11 de enero de 2027 y las dos semanas sobrantes quedarían como colchón para la demostración final. El contenido no cambia.
 
-Guías detalladas: [semana 1](semanas/semana-01.md) · [2](semanas/semana-02.md) · [3](semanas/semana-03.md) · [4](semanas/semana-04.md) · [receso](semanas/receso.md) · [5](semanas/semana-05.md) · [6](semanas/semana-06.md) · [7](semanas/semana-07.md) · [8](semanas/semana-08.md)
+Guías detalladas: [semana 1](semanas/semana-01.md) · [2](semanas/semana-02.md) · [3](semanas/semana-03.md) · [4](semanas/semana-04.md) · [receso](semanas/receso.md) · [5](semanas/semana-05.md) · [6](semanas/semana-06.md) · [7](semanas/semana-07.md) · [8](semanas/semana-08.md) · [repaso para el examen](semanas/repaso-examen.md)
 
 ## 5. Cómo madura el pipeline
 
@@ -99,11 +101,13 @@ Guías: [Registro gratuito en AWS y Azure](nube/registro-aws-azure.md) · [Azure
 | Estudiantes sin Docker en su equipo | GitHub Codespaces incluye Docker y se usa desde el navegador |
 | Consumo de crédito por recursos olvidados | Recursos con etiquetas, plan F1 y escalado a cero; script de limpieza obligatorio en la semana 8 |
 | El receso desplaza el calendario | Tabla alternativa en la sección 4 |
+| El examen final compite con el cierre del proyecto | Entregas prácticas de la semana 8 cierran el miércoles 27; demo en video; nivel base corto; sesión con repaso |
 
 ## 9. Pendientes de confirmar con la coordinación
 
 - Programación oficial de sesiones síncronas (día, hora y duración).
 - Confirmación del receso del 21 de diciembre al 3 de enero.
+- Día exacto del examen final (jueves 28 o viernes 29 de enero) y si la sesión síncrona de la semana 8 puede programarse el martes 26.
 - Si la institución puede habilitar un aula de AWS Academy Learner Lab para esta asignatura (UNIR es miembro de AWS Academy a través de Grupo ProEduca).
 - Si las suscripciones Azure for Students creadas con `comunidadunir.net` permiten registrar aplicaciones en Entra ID (solo afecta a la parte opcional de la semana 8).
 
