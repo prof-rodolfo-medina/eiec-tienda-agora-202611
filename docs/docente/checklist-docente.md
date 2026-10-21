@@ -22,7 +22,7 @@ Lo siguiente se validó localmente (pruebas, lint, sintaxis YAML y shell), pero 
 
 | Pieza | Qué validar | Cuándo |
 |---|---|---|
-| `Dockerfile` y `semana-06-release-imagen.yml` | Primer run en GitHub: imagen publicada en GHCR y job `smoke-image` en verde | Antes de la semana 6 |
+| ~~`Dockerfile` y `semana-06-release-imagen.yml`~~ | ✅ Validado el 21-oct-2026 en la rama `prueba/release-imagen`: imagen construida y publicada en GHCR, manifiesto generado y smoke test de la imagen en verde | — |
 | `pipelines/jenkins/` | Construcción de la imagen y primer build del Jenkinsfile | Antes de la semana 5 |
 | `pipelines/gitlab/.gitlab-ci.yml` | Pipeline completo en GitLab.com (runners compartidos con Docker-in-Docker) | Antes de la semana 6 |
 | `infra/azure/crear-app-service.sh` + `semana-07-deploy-azure-appservice.yml` | Creación del plan F1, despliegue con perfil de publicación y smoke test | Antes de la semana 7 |
