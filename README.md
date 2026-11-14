@@ -74,6 +74,7 @@ BITACORA.md                   evidencia semanal de cada fork (no se entrega: es 
 app/                          código de la API (lógica separada de FastAPI para probarla)
 tests/unit|api|smoke          baterías de pruebas por marcador (pytest.ini)
 .github/workflows/            pipeline activo: fase de commit
+.devcontainer/                entorno listo para GitHub Codespaces (Python 3.12 + Docker)
 pipelines/                    plantillas por semana: GitHub Actions, Jenkins, GitLab, CircleCI
 infra/azure|aws               scripts de nube (App Service, Container Apps, EC2) y limpieza
 scripts/                      smoke test de despliegue y laboratorio de git bisect
@@ -82,6 +83,7 @@ docs/
 ├── plan-del-curso.md         planeación completa
 ├── actividades/              cómo se conecta el proyecto con las actividades del aula
 ├── semanas/                  guía de cada semana, receso, repaso y simulacro Wooclap
+├── sesiones/                 resumen de cada clase por Zoom: objetivos, agenda y tareas
 ├── proyecto/                 enunciado, backlog, equipos y rúbrica formativa
 ├── nube/                     registro en Azure y AWS, guías por nube y plan B
 └── docente/                  checklist del profesor

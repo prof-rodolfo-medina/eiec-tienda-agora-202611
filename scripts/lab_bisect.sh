@@ -7,6 +7,7 @@
 #   cd /tmp/lab-bisect
 #   git bisect start HEAD v1.0          # HEAD está roto, v1.0 funcionaba
 #   git bisect run python check.py      # Git prueba por ti en ~3 pasos
+#                                       # (si no tienes "python": git bisect run python3 check.py)
 #   git bisect reset
 set -euo pipefail
 
