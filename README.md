@@ -1,38 +1,41 @@
 # EIEC · Tienda Ágora · Edición nov 2026 – ene 2027
 
-Repositorio del curso **Entornos de Integración y Entrega Continua** (Maestría en Desarrollo y Operaciones de Software, UNIR).
-Es, a la vez, la **portada del curso** y el **proyecto conductor**: cada estudiante o equipo hace fork y lo hace madurar durante ocho semanas, de "código que funciona en mi máquina" a "entrega cualquier día, con evidencia y con marcha atrás".
+Repositorio complementario del curso **Entornos de Integración y Entrega Continua** (Maestría en Desarrollo y Operaciones de Software, UNIR).
+Es el **proyecto conductor** del curso: cada estudiante o equipo hace fork y lo hace madurar durante ocho semanas, de "código que funciona en mi máquina" a "entrega cualquier día, con evidencia y con marcha atrás".
 
-**Docente:** Dr. Rodolfo Rafael Medina Ramírez · **Inicio:** semana del 23 de noviembre de 2026 · **Proyecto:** formativo, no sumativo, individual o en equipo
+**Docente:** Dr. Rodolfo Rafael Medina Ramírez · **Del 23 de noviembre de 2026 al 29 de enero de 2027** · **Proyecto:** formativo, no sumativo, individual o en equipo
 
 [![CI - fase de commit](https://github.com/prof-rodolfo-medina/eiec-tienda-agora-202611/actions/workflows/ci.yml/badge.svg)](https://github.com/prof-rodolfo-medina/eiec-tienda-agora-202611/actions/workflows/ci.yml)
 
 > [!IMPORTANT]
-> **Como estudiante de UNIR tienes acceso gratuito a Microsoft Azure y a AWS**, sin pagos personales y sin tarjeta bancaria. Solo tienes que registrarte con tu correo **@comunidadunir.net**.
-> Cómo hacerlo, paso a paso: **[Registro para uso de AWS y Microsoft Azure](docs/nube/registro-aws-azure.md)**. Hazlo en la semana 1.
+> **El aula virtual es el único canal oficial.** Las fechas vigentes son siempre las del aula, las actividades se entregan en el aula y el único medio de contacto, además de las clases por Zoom, es el foro **"Pregúntale a tu profesor"**. Este repositorio no es canal de contacto ni de entrega. → [SUPPORT.md](SUPPORT.md)
+
+> [!TIP]
+> **Como estudiante de UNIR tienes acceso gratuito a Microsoft Azure y a AWS**, sin tarjeta bancaria, registrándote con tu correo `@comunidadunir.net`. Hazlo en la semana 1: [instrucciones de registro](docs/nube/registro-aws-azure.md).
 
 ## Calendario
 
-Sesiones síncronas: **propuesta** de jueves; se confirmará con la programación oficial.
+Según la programación semanal del aula. Día y hora de cada clase: **consulta el aula**.
 
-| Sem. | Fechas | Temas | En Tienda Ágora… | Guía |
-|---|---|---|---|---|
-| 1 | 23 – 29 nov | T1 Introducción · T2 Control de versiones | Fork, entorno, diagnóstico de madurez, `git bisect` | [semana-01](docs/semanas/semana-01.md) |
-| 2 | 30 nov – 6 dic | T3 Flujos con Git · T4 Fases de la entrega continua | `main` protegida, fase de commit, PR rojo/verde | [semana-02](docs/semanas/semana-02.md) |
-| 3 | 7 – 13 dic | T5 Pruebas | Historia del backlog con pruebas; baterías separadas | [semana-03](docs/semanas/semana-03.md) |
-| 4 | 14 – 20 dic | T6 Calidad del código | Quality gate, revisión entre pares, SonarQube | [semana-04](docs/semanas/semana-04.md) |
-| — | 21 dic – 3 ene | **Receso** | Solo actividades opcionales | [receso](docs/semanas/receso.md) |
-| 5 | 4 – 10 ene | T7 Jenkins | El mismo pipeline como Jenkinsfile | [semana-05](docs/semanas/semana-05.md) |
-| 6 | 11 – 17 ene | T8 GitLab · T9 Artefactos | Imagen única versionada en GHCR; GitLab CI | [semana-06](docs/semanas/semana-06.md) |
-| 7 | 18 – 24 ene | T10 Despliegue (I) | Staging → aprobación → producción en **Azure**; EC2 en **AWS** | [semana-07](docs/semanas/semana-07.md) |
-| 8 | 25 – 31 ene | T10 Despliegue (II) · Cierre · **Examen final (jue 28 o vie 29)** | Feature flags, canary, demo final en video; repaso para el examen | [semana-08](docs/semanas/semana-08.md) · [repaso](docs/semanas/repaso-examen.md) |
+| Sem. | Fechas | Temas | Clase | En el aula | En Tienda Ágora… | Guía |
+|---|---|---|---|---|---|---|
+| 1 | 23 – 27 nov | T1 Introducción · T2 Control de versiones | Clase 1 y presentación (90 min) | Microtests T1–T2 | Fork, entorno, diagnóstico de madurez, `git bisect` | [semana-01](docs/semanas/semana-01.md) |
+| 2 | 30 nov – 4 dic | T3 Flujos con Git · T4 Fases de la entrega continua | Clase 2 y presentación act. 1 (60 min) | **Actividad 1** · Microtests T3–T4 | `main` protegida, fase de commit, PR rojo/verde | [semana-02](docs/semanas/semana-02.md) |
+| 3 | 7 – 11 dic | T5 Pruebas | Clase 3 (60 min) | Microtests T5 | Historia del backlog con pruebas; baterías separadas | [semana-03](docs/semanas/semana-03.md) |
+| 4 | 14 – 18 dic | T6 Calidad del código | Clase 4 y resolución act. 1 (90 min) | **Entrega act. 1** · Microtests T6 | Quality gate, revisión entre pares | [semana-04](docs/semanas/semana-04.md) |
+| — | 21 dic – 3 ene | **Periodo no lectivo** | — | — | Solo opcional | [receso](docs/semanas/receso.md) |
+| 5 | 4 – 8 ene | T7 Jenkins | Clase 5 y presentación act. 2 (60 min) | **Actividad 2** · Microtests T7 | El mismo pipeline como Jenkinsfile | [semana-05](docs/semanas/semana-05.md) |
+| 6 | 11 – 15 ene | T8 GitLab · T9 Artefactos | Clase 6 (60 min) | Microtests T8–T9 | Imagen única versionada en GHCR; GitLab CI | [semana-06](docs/semanas/semana-06.md) |
+| 7 | 18 – 22 ene | T10 Modelos de despliegue | Clase 7 y resolución act. 2 (90 min) | **Entrega act. 2** · Microtests T10 | Staging → aprobación → producción; feature flags; marcha atrás | [semana-07](docs/semanas/semana-07.md) |
+| 8 | 25 – 29 ene | Repaso | Clase 8: repaso y **simulacro en Wooclap** (90 min) | **Examen final** | Diagnóstico final y limpieza de la nube | [semana-08](docs/semanas/semana-08.md) · [simulacro](docs/semanas/simulacro-wooclap.md) · [repaso](docs/semanas/repaso-examen.md) |
 
-Plan completo (resultados de aprendizaje, enfoque, nube, riesgos): **[docs/plan-del-curso.md](docs/plan-del-curso.md)**
+- Cómo se relaciona el proyecto con las actividades evaluables: **[docs/actividades](docs/actividades/README.md)**.
+- Plan completo (resultados de aprendizaje, enfoque, nube, riesgos): **[docs/plan-del-curso.md](docs/plan-del-curso.md)**.
 
 ## Empieza aquí (semana 1)
 
 ```bash
-# 1. Fork en GitHub y clona tu fork (o abre un Codespace sobre él)
+# 1. Haz fork en GitHub y clona TU fork (o abre un Codespace sobre él)
 git clone https://github.com/TU_USUARIO/eiec-tienda-agora-202611.git
 cd eiec-tienda-agora-202611
 
@@ -64,14 +67,24 @@ GET  /version                 GET  /products/{id}       GET  /carts/{id}
 ## Estructura del repositorio
 
 ```text
-app/                    código de la API (lógica separada de FastAPI para probarla)
-tests/unit|api|smoke    baterías de pruebas por marcador (pytest.ini)
-.github/workflows/      pipeline activo: fase de commit
-pipelines/              plantillas por semana: GitHub Actions, Jenkins, GitLab, CircleCI
-infra/azure|aws         scripts de nube (App Service, Container Apps, EC2) y limpieza
-scripts/                smoke test de despliegue y laboratorio de git bisect
-docs/                   plan, guías semanales, proyecto, rúbrica, nube, notas docentes
-BITACORA.md             evidencia semanal de cada fork
+README.md · SUPPORT.md        portada del curso y canal oficial (aula virtual)
+CONTRIBUTING.md               cómo trabajar en tu fork
+BITACORA.md                   evidencia semanal de cada fork (no se entrega: es tu registro)
+
+app/                          código de la API (lógica separada de FastAPI para probarla)
+tests/unit|api|smoke          baterías de pruebas por marcador (pytest.ini)
+.github/workflows/            pipeline activo: fase de commit
+pipelines/                    plantillas por semana: GitHub Actions, Jenkins, GitLab, CircleCI
+infra/azure|aws               scripts de nube (App Service, Container Apps, EC2) y limpieza
+scripts/                      smoke test de despliegue y laboratorio de git bisect
+
+docs/
+├── plan-del-curso.md         planeación completa
+├── actividades/              cómo se conecta el proyecto con las actividades del aula
+├── semanas/                  guía de cada semana, receso, repaso y simulacro Wooclap
+├── proyecto/                 enunciado, backlog, equipos y rúbrica formativa
+├── nube/                     registro en Azure y AWS, guías por nube y plan B
+└── docente/                  checklist del profesor
 ```
 
 ## Nube
@@ -79,14 +92,14 @@ BITACORA.md             evidencia semanal de cada fork
 | | Uso en el curso | Guía |
 |---|---|---|
 | **Azure for Students** | Despliegue automatizado desde el pipeline (App Service F1; Container Apps opcional) | [docs/nube/azure.md](docs/nube/azure.md) |
-| **AWS Educate** | Laboratorios guiados en consola: misma imagen en EC2 (despliegue inmutable) | [docs/nube/aws.md](docs/nube/aws.md) |
+| **AWS Educate** | Laboratorios guiados en consola: la misma imagen en EC2 (despliegue inmutable) | [docs/nube/aws.md](docs/nube/aws.md) |
 | **Sin nube** | Codespaces + Docker + GHCR | [docs/nube/plan-b.md](docs/nube/plan-b.md) |
 
-Regístrate en ambas con tu correo **@comunidadunir.net** durante la semana 1 ([instrucciones de registro](docs/nube/registro-aws-azure.md)). Lo que se crea en la nube se elimina al terminar (`infra/azure/limpiar.sh`).
+Lo que se crea en la nube se elimina al terminar (`infra/azure/limpiar.sh`).
 
 ## Proyecto
 
 - [Enunciado, backlog y definición de terminado](docs/proyecto/enunciado.md)
 - [Trabajo individual o en equipo y roles rotativos](docs/proyecto/equipos.md)
 - [Rúbrica formativa y modelo de madurez](docs/proyecto/rubrica-formativa.md)
-- [Cómo trabajar en el repositorio](CONTRIBUTING.md)
+- [Cómo trabajar en tu fork](CONTRIBUTING.md)

@@ -1,10 +1,11 @@
 # Receso · 21 de diciembre de 2026 – 3 de enero de 2027
 
-No hay sesiones ni entregas. Todo lo de esta página es **opcional**.
+Periodo no lectivo: no hay clases. Todo lo de esta página es **opcional**. Las fechas de entrega vigentes son las del aula virtual.
 
 ## Si quieres ponerte al día
 
 - Completa el nivel base de las semanas 1 a 4. Es lo único necesario para continuar en enero.
+- Avanza los microtests de los Temas 1 a 6 en el aula.
 - Revisa que tu `main` esté protegida y en verde.
 
 ## Si quieres adelantar sin quemar crédito

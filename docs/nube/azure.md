@@ -6,7 +6,7 @@
 2. No se pide tarjeta. Obtienes **100 USD de crédito** para usar en 12 meses y servicios con cuota gratuita.
 3. Verifica en el portal (<https://portal.azure.com>) que aparece la suscripción *Azure for Students* y abre **Cloud Shell** (icono `>_`, modo Bash). Todo el curso se puede hacer desde ahí, sin instalar la CLI.
 
-> Hazlo en la semana 1. Si la activación falla, avisa en el foro: se puede trabajar en equipo con la suscripción de otra persona.
+> Hazlo en la semana 1. Si la activación falla, avisa en el foro "Pregúntale a tu profesor" del aula: se puede trabajar en equipo con la suscripción de otra persona.
 
 ## Qué usamos y cuánto cuesta
 
@@ -31,7 +31,7 @@ El script habilita las credenciales básicas de publicación (SCM), que Azure de
 
 ## Opcional: inicio de sesión OIDC para Container Apps
 
-Para ejecutar el canary desde el pipeline (`semana-08-canary-containerapps.yml`) GitHub debe iniciar sesión en Azure sin contraseña mediante OIDC:
+Para ejecutar el canary desde el pipeline (`semana-07-canary-containerapps.yml`) GitHub debe iniciar sesión en Azure sin contraseña mediante OIDC:
 
 ```bash
 # En Cloud Shell. Si el primer comando falla por permisos, tu tenant no lo permite:

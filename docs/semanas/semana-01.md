@@ -1,8 +1,11 @@
-# Semana 1 · 23 – 29 de noviembre de 2026
+# Semana 1 · 23 – 27 de noviembre de 2026
 
 **Temas:** T1 Introducción a la integración y entrega continuas · T2 Control de versiones
-**Sesión síncrona (propuesta):** jueves 26 de noviembre
+**Clase 1** y presentación del curso (90 min) · día y hora: consulta el aula virtual
+**En el aula esta semana:** microtests 1.1–1.6 y 2.1–2.6
 **Pregunta guía:** ¿Qué le falta a Tienda Ágora para poder entregarse con confianza cualquier día?
+
+> Las fechas vigentes son siempre las del aula virtual. Dudas: foro "Pregúntale a tu profesor".
 
 ## Propósito
 
@@ -19,15 +22,18 @@ Arrancar con el entorno listo, el proyecto en las manos de cada equipo y un diag
 
 > Las altas en la nube pueden tardar. Hacerlas esta semana evita bloqueos en las semanas 6 y 7.
 
-## Sesión síncrona (50 min)
+## Clase 1 (90 min)
 
 | Min | Actividad | Mensaje clave |
 |---|---|---|
-| 0–8 | Presentación del curso, el proyecto y el calendario | Un solo proyecto, ocho mejoras visibles |
-| 8–18 | Antipatrones del Tema 1 sobre Tienda Ágora tal como está | "Si desplegar duele, hay que hacerlo más a menudo" |
-| 18–30 | Demo: fork, Codespace, `make test`, `make run`, `/docs` | El repositorio es la única fuente de verdad |
-| 30–42 | Demo: `git bisect` encuentra un error en 3 pasos | Commits pequeños = errores fáciles de encontrar |
-| 42–50 | Modalidad (individual o equipo), bitácora y laboratorio | La evidencia vive en el repositorio |
+| 0–15 | Presentación del curso: aula virtual como canal oficial, foro "Pregúntale a tu profesor", calendario, actividades 1 y 2, microtests y examen | Las fechas vigentes son las del aula |
+| 15–25 | El proyecto Tienda Ágora: formativo, no sumativo; niveles base, intermedio y avanzado; bitácora | Un solo proyecto, ocho mejoras visibles |
+| 25–30 | Acceso gratuito a Azure for Students y AWS Educate con el correo institucional | Date de alta esta semana |
+| 30–45 | T1: integración vs. entrega vs. despliegue continuos; antipatrones sobre Tienda Ágora tal como está | "Si desplegar duele, hay que hacerlo más a menudo" |
+| 45–55 | Modelo de madurez: diagnóstico guiado del proyecto | Medir el punto de partida para ver el avance |
+| 55–70 | T2 · Demo: fork, Codespace, `make test`, `make run`, `/docs` | El repositorio es la única fuente de verdad |
+| 70–80 | Demo: `git bisect` encuentra un error en 3 pasos | Commits pequeños = errores fáciles de encontrar |
+| 80–90 | Modalidad (individual o equipo), laboratorio y dudas | La evidencia vive en tu fork |
 
 ## Laboratorio
 
@@ -71,7 +77,7 @@ Responde en la bitácora: ¿qué commit introdujo el error?, ¿por qué su mensa
 - Escribe en `docs/decisiones/0001-flujo-de-ramas.md` (en tu fork) una decisión breve: qué flujo de ramas usarán y por qué (lo retomaremos en la semana 2).
 - Configura la firma de commits o un `commit-msg` hook que exija mensajes descriptivos.
 
-## Evidencia de la semana
+## Evidencia de la semana (en tu bitácora; no se entrega)
 
 - Enlace a tu fork y al PR de registro.
 - Diagnóstico de madurez inicial en la bitácora.
@@ -85,5 +91,5 @@ Responde en la bitácora: ¿qué commit introdujo el error?, ¿por qué su mensa
 ## Notas para el docente
 
 - Tener abierto un Codespace del repositorio del curso antes de la sesión.
-- Preparar la tabla de equipos en Moodle (o un issue fijado) para que cada equipo registre su fork.
+- Si se quiere conocer los forks y equipos, pedirlo en el aula (foro o encuesta), nunca por *issues* del repositorio.
 - Dedicar un minuto de la sesión a explicar el beneficio de acceso gratuito a Azure y AWS: muchos estudiantes no lo conocen. Mostrar [registro-aws-azure.md](../nube/registro-aws-azure.md).

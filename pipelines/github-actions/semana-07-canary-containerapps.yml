@@ -1,4 +1,4 @@
-# SEMANA 8 · Tema 10 (II) · Modelos de despliegue con Azure Container Apps
+# SEMANA 7 · Tema 10 · Modelos de despliegue con Azure Container Apps (nivel avanzado)
 # Copia este archivo a .github/workflows/canary.yml en tu fork. OPCIONAL / AVANZADO.
 #
 # Despliega la imagen publicada en GHCR (semana 6) como una NUEVA REVISIÓN y reparte el

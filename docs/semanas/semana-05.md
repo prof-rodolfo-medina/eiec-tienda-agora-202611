@@ -1,8 +1,11 @@
-# Semana 5 · 4 – 10 de enero de 2027
+# Semana 5 · 4 – 8 de enero de 2027
 
 **Tema:** T7 Jenkins
-**Sesión síncrona (propuesta):** jueves 7 de enero
+**Clase 5** y presentación de la actividad 2 (60 min) · día y hora: consulta el aula virtual
+**En el aula esta semana:** se publica la **actividad 2** (primer servidor de Jenkins y primer pipeline) · microtests 7.1–7.5
 **Pregunta guía:** Si cambio de herramienta, ¿qué se conserva del pipeline y qué cambia?
+
+> Las fechas vigentes son siempre las del aula virtual. Dudas: foro "Pregúntale a tu profesor".
 
 ## Propósito
 
@@ -22,7 +25,7 @@ Implementar en Jenkins el mismo pipeline que ya funciona en GitHub Actions, como
 | VM en Azure (Azure for Students) | Si quieres un Jenkins accesible desde internet (permite webhooks). Apágala al terminar |
 | Instancia EC2 en un laboratorio de AWS Educate/Academy | Misma idea, si tu laboratorio lo permite |
 
-## Sesión síncrona (50 min)
+## Clase 5 (60 min)
 
 | Min | Actividad | Mensaje clave |
 |---|---|---|
@@ -31,6 +34,7 @@ Implementar en Jenkins el mismo pipeline que ya funciona en GitHub Actions, como
 | 22–35 | Demo: trabajo *Pipeline script from SCM* con el Jenkinsfile del repo | El pipeline viaja con el código |
 | 35–45 | Stage View, Test Results, artefactos; un fallo provocado | El feedback debe ser accesible al desarrollador |
 | 45–50 | Comparativa Actions vs. Jenkins y laboratorio | — |
+| 50–60 | **Presentación de la actividad 2** (primer servidor de Jenkins y primer pipeline): objetivo, requisitos (Docker), entregables y fecha en el aula | Primero la actividad; después, tu Jenkins apuntando a Tienda Ágora |
 
 ## Laboratorio
 
@@ -59,7 +63,7 @@ docker compose logs jenkins | grep -A2 initialAdminPassword
 - Cambia a un trabajo **Multibranch Pipeline** para que cada rama y PR tenga su propio pipeline.
 - Si tu Jenkins tiene URL pública (VM en la nube), configura un webhook de GitHub en lugar de `pollSCM`.
 
-## Evidencia de la semana
+## Evidencia de la semana (en tu bitácora; no se entrega)
 
 - Captura del *Stage View* con al menos un build verde y uno rojo.
 - Captura de *Test Result* con los informes JUnit.

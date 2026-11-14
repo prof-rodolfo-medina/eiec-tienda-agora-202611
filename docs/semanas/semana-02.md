@@ -1,8 +1,11 @@
-# Semana 2 · 30 de noviembre – 6 de diciembre de 2026
+# Semana 2 · 30 de noviembre – 4 de diciembre de 2026
 
 **Temas:** T3 Flujos de trabajo con Git · T4 Fases de la entrega continua
-**Sesión síncrona (propuesta):** jueves 3 de diciembre
+**Clase 2** y presentación de la actividad 1 (60 min) · día y hora: consulta el aula virtual
+**En el aula esta semana:** se publica la **actividad 1** (pull requests en GitHub) · microtests 3.1–3.4 y 4.1–4.5
 **Pregunta guía:** ¿Qué tiene que pasar para que un cambio pueda entrar en `main`?
+
+> Las fechas vigentes son siempre las del aula virtual. Dudas: foro "Pregúntale a tu profesor".
 
 ## Propósito
 
@@ -14,7 +17,7 @@ Convertir `main` en una rama siempre desplegable: todo cambio entra por Pull Req
 - Tema 4: 4.2 a 4.5 (qué es un pipeline, compilación única, smoke test, fase de commit, feedback en menos de 10 minutos).
 - Abrir `.github/workflows/ci.yml` y señalar qué paso corresponde a cada actividad de la fase de commit.
 
-## Sesión síncrona (50 min)
+## Clase 2 (60 min)
 
 | Min | Actividad | Mensaje clave |
 |---|---|---|
@@ -23,6 +26,7 @@ Convertir `main` en una rama siempre desplegable: todo cambio entra por Pull Req
 | 20–30 | Demo: proteger `main` y exigir el check `commit-stage` | Las reglas viven en la plataforma, no en la buena voluntad |
 | 30–42 | Demo: PR rojo (rompo `/health`) y PR verde; leer el log | Rojo no castiga: informa dónde se rompió la promesa |
 | 42–50 | Laboratorio y niveles | — |
+| 50–60 | **Presentación de la actividad 1** (pull requests en GitHub): objetivo, entregables y fecha en el aula | Lo que practicas en tu fork es el mismo flujo |
 
 ## Laboratorio
 
@@ -54,7 +58,7 @@ Aplica el principio de **compilación única** (Tema 4.3) dentro de la fase de c
 - Agrega una matriz con Python 3.11 y 3.12 y discute en la bitácora si vale el tiempo extra de feedback.
 - Mide la duración del run: ¿cumple la meta de menos de 10 minutos? ¿Qué paso es el más lento?
 
-## Evidencia de la semana
+## Evidencia de la semana (en tu bitácora; no se entrega)
 
 - Captura o enlace de la regla de protección de `main`.
 - Enlace al PR rojo (cerrado) y al PR verde (fusionado) con sus runs.

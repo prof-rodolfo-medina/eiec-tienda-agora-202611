@@ -1,8 +1,11 @@
-# Semana 6 · 11 – 17 de enero de 2027
+# Semana 6 · 11 – 15 de enero de 2027
 
 **Temas:** T8 GitLab · T9 Otras herramientas de CI/CD (registros de artefactos)
-**Sesión síncrona (propuesta):** jueves 14 de enero
+**Clase 6** (60 min) · día y hora: consulta el aula virtual
+**En el aula esta semana:** microtests 8.1–8.4 y 9.1–9.6 · actividad 2 en curso
 **Pregunta guía:** ¿Qué es exactamente lo que se despliega, y cómo sé de qué commit salió?
+
+> Las fechas vigentes son siempre las del aula virtual. Dudas: foro "Pregúntale a tu profesor".
 
 ## Propósito
 
@@ -14,7 +17,7 @@ Pasar de "código que pasa pruebas" a **artefacto versionado**: una imagen de co
 - Tema 9: Bitbucket, CircleCI, Nexus como repositorio de artefactos (9.2 a 9.6).
 - Leer el `Dockerfile` del repositorio: ¿dónde se inyectan la versión y el commit?
 
-## Sesión síncrona (50 min)
+## Clase 6 (60 min)
 
 | Min | Actividad | Mensaje clave |
 |---|---|---|
@@ -23,6 +26,7 @@ Pasar de "código que pasa pruebas" a **artefacto versionado**: una imagen de co
 | 25–35 | Demo: `docker run` de la imagen publicada y `curl /version` | El artefacto dice quién es |
 | 35–45 | Demo: el mismo pipeline en GitLab (espejo del repo), jobs, artefactos, registro | Mismas fases, otra sintaxis |
 | 45–50 | Nexus y CircleCI en dos minutos; laboratorio | Elegir herramienta es deuda técnica a largo plazo |
+| 50–60 | Dudas sobre la **actividad 2** (entrega según el aula) | El agente necesita las herramientas del trabajo |
 
 ## Laboratorio
 
@@ -59,7 +63,7 @@ Pasar de "código que pasa pruebas" a **artefacto versionado**: una imagen de co
 - Levanta **Nexus** en contenedor como repositorio privado de paquetes Python y publica un *wheel* de la app (réplica del caso práctico 9.6 con PyPI en lugar de npm).
 - Prueba `pipelines/circleci/config.yml` y anota en la bitácora tres diferencias con GitHub Actions.
 
-## Evidencia de la semana
+## Evidencia de la semana (en tu bitácora; no se entrega)
 
 - Enlace a la imagen en GHCR y manifiesto de la versión `1.0.0` en la bitácora.
 - (Intermedio) Enlace al pipeline verde en GitLab.

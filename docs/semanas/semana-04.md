@@ -1,8 +1,11 @@
-# Semana 4 · 14 – 20 de diciembre de 2026
+# Semana 4 · 14 – 18 de diciembre de 2026
 
 **Tema:** T6 Evaluación y calidad del código
-**Sesión síncrona (propuesta):** jueves 17 de diciembre
+**Clase 4** y resolución de la actividad 1 (90 min) · día y hora: consulta el aula virtual
+**En el aula esta semana:** **entrega de la actividad 1** (según la programación, 14/12) · microtests 6.1–6.8
 **Pregunta guía:** ¿Debe fusionarse un PR que pasa las pruebas pero baja la cobertura?
+
+> Las fechas vigentes son siempre las del aula virtual. Dudas: foro "Pregúntale a tu profesor".
 
 ## Propósito
 
@@ -13,15 +16,16 @@ Añadir señales de calidad que no dependen del comportamiento funcional (estilo
 - Tema 6 completo: métricas de Accelerate (6.2), revisiones de código (6.3 y 6.4), convenciones de estilo (6.5), cobertura (6.6) y SonarQube (6.7 y 6.8).
 - Ejecutar `make coverage` y abrir `htmlcov/index.html`. Hay líneas de `app/main.py` sin cubrir **a propósito**.
 
-## Sesión síncrona (50 min)
+## Clase 4 (90 min)
 
 | Min | Actividad | Mensaje clave |
 |---|---|---|
 | 0–10 | Las cuatro métricas (frecuencia, tiempo de entrega, MTTR, tasa de fallos) | Velocidad y estabilidad no se oponen |
 | 10–20 | Revisión de código en un PR real: comentarios, sugerencias, *request changes* | Un PR es una conversación con evidencia |
 | 20–32 | Umbral absoluto vs. "la cobertura no baja" (Tema 4.5 y 6.6) | La regla debe ser evidente y acordada |
-| 32–42 | Demo: quality gate en el PR y vista de SonarQube Cloud | Varias señales, una sola pantalla |
-| 42–50 | Retrospectiva del bloque I y plan para el receso | — |
+| 32–45 | Demo: quality gate en el PR y vista de SonarQube Cloud | Varias señales, una sola pantalla |
+| 45–80 | **Resolución de la actividad 1**: el flujo completo en vivo, errores frecuentes y preguntas | El PR conecta dos repositorios con permisos distintos |
+| 80–90 | Retrospectiva del bloque I y plan para el periodo no lectivo | — |
 
 ## Laboratorio
 
@@ -43,7 +47,7 @@ Añadir señales de calidad que no dependen del comportamiento funcional (estilo
 - Define un *quality gate* que bloquee si aparecen *bugs* nuevos o duplicación en el código nuevo.
 - Mide en tu fork dos de las cuatro métricas de Accelerate con los datos de GitHub (frecuencia de fusión a `main`, tiempo desde el primer commit del PR hasta la fusión).
 
-## Evidencia de la semana
+## Evidencia de la semana (en tu bitácora; no se entrega)
 
 - PR con el quality gate activo y revisado por otra persona.
 - Cobertura antes y después.
@@ -56,5 +60,6 @@ Añadir señales de calidad que no dependen del comportamiento funcional (estilo
 
 ## Notas para el docente
 
-- Esta es la última sesión antes del receso: dejar claro que el receso no tiene entregas.
-- Publicar en Moodle las actividades opcionales del [receso](receso.md).
+- Esta es la última clase antes del periodo no lectivo: dejar claro que en ese periodo no hay clases.
+- Para la resolución de la actividad 1, tener preparado un fork de demostración y un PR de ejemplo.
+- Publicar en el aula el aviso con las actividades opcionales del [receso](receso.md).

@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
-# Modelos de despliegue con Azure Container Apps (semana 8, Tema 10).
-# Funciona desde Azure Cloud Shell o desde el workflow semana-08-canary-containerapps.yml.
+# Modelos de despliegue con Azure Container Apps (semana 7, nivel avanzado, Tema 10).
+# Funciona desde Azure Cloud Shell o desde el workflow semana-07-canary-containerapps.yml.
 #
 # Preparación (una vez):
 #   ALIAS=jperez IMAGE_REPO=ghcr.io/usuario/eiec-tienda-agora-202611 bash infra/azure/containerapps-canary.sh setup sha-1a2b3c4

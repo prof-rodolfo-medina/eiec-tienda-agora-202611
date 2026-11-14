@@ -49,4 +49,4 @@ Los estudiantes deben:
 | **Azure for Students** | Crédito de estudiante y servicios con cuota gratuita, sin tarjeta | Despliegue automatizado desde el pipeline a staging y producción | [azure.md](azure.md) |
 | **AWS Educate** | Formación y laboratorios prácticos en entornos controlados, sin tarjeta | Despliegue de la imagen del proyecto en EC2 | [aws.md](aws.md) |
 
-Si tienes problemas con la activación, escríbelo en el foro de dudas técnicas del aula: mientras se resuelve, puedes trabajar con el [Plan B](plan-b.md) o con la cuenta de alguien de tu equipo.
+Si tienes problemas con la activación, escríbelo en el foro "Pregúntale a tu profesor" del aula: mientras se resuelve, puedes trabajar con el [Plan B](plan-b.md) o con la cuenta de alguien de tu equipo.

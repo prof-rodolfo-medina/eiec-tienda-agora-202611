@@ -1,0 +1,7 @@
+# En el repositorio del curso los issues están desactivados: el canal oficial es el aula virtual.
+# En tu fork, esta configuración deja solo la plantilla de historia de usuario para tu backlog.
+blank_issues_enabled: false
+contact_links:
+  - name: Dudas y reportes del curso
+    url: https://github.com/prof-rodolfo-medina/eiec-tienda-agora-202611/blob/main/SUPPORT.md
+    about: El único canal oficial es el aula virtual (foro "Pregúntale a tu profesor").

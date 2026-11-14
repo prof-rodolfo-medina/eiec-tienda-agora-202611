@@ -2,7 +2,7 @@
 
 ## Para estudiantes
 
-1. Haz **fork** de este repositorio y trabaja en tu fork (o en el fork de tu equipo).
+1. Haz **fork** de este repositorio y trabaja en tu fork (o en el fork de tu equipo). No abras pull requests hacia el repositorio del curso.
 2. Nunca hagas commit directo a `main`: crea una rama, abre un Pull Request hacia **tu** `main` y espera el check verde.
 3. Antes de hacer push:
 
@@ -21,6 +21,15 @@ git fetch upstream
 git checkout main && git merge upstream/main
 ```
 
-## Para reportar un error en el material
+## Para reportar un error en el material o hacer una pregunta
 
-Abre un *issue* en el repositorio del curso con la plantilla "Error en el material".
+Escribe en el foro **"Pregúntale a tu profesor"** del aula virtual: indica el archivo, qué esperabas y qué pasó (con el log o una captura). Este repositorio no recibe *issues* ni pull requests de estudiantes. Ver [SUPPORT.md](SUPPORT.md).
+
+## Privacidad
+
+- No publiques en tu fork datos personales: ni correo, ni teléfono, ni matrícula. En la bitácora basta con tu usuario de GitHub.
+- Para que tus commits no expongan tu correo, en GitHub activa **Settings → Emails → Keep my email addresses private** y configura en tu equipo el correo `noreply` que GitHub te asigna:
+
+  ```bash
+  git config --global user.email "ID+usuario@users.noreply.github.com"
+  ```

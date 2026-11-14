@@ -48,6 +48,6 @@
 
 ## Semana 6
 
-## Semana 7
+## Semana 7 · Entrega continua en la nube
 
-## Semana 8 · Demo final (video), diagnóstico final y limpieza de nube · entrega: miércoles 27
+## Semana 8 · Diagnóstico final, retrospectiva y limpieza de nube (opcional, antes del examen)

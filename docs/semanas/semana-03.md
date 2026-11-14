@@ -1,8 +1,11 @@
-# Semana 3 · 7 – 13 de diciembre de 2026
+# Semana 3 · 7 – 11 de diciembre de 2026
 
 **Tema:** T5 Pruebas
-**Sesión síncrona (propuesta):** jueves 10 de diciembre
+**Clase 3** (60 min) · día y hora: consulta el aula virtual
+**En el aula esta semana:** microtests 5.1–5.5 · actividad 1 en curso
 **Pregunta guía:** Si una prueba es una promesa ejecutable, ¿qué promesas hace hoy Tienda Ágora?
+
+> Las fechas vigentes son siempre las del aula virtual. Dudas: foro "Pregúntale a tu profesor".
 
 ## Propósito
 
@@ -13,7 +16,7 @@ Usar la pirámide de pruebas para decidir qué probar y dónde, separar las bate
 - Tema 5 completo, en especial 5.3 (tipos de pruebas), 5.4 (automatización: versionar, paralelizar, separar baterías, cuarentena) y 5.5 (caso práctico).
 - Revisar en el repositorio: `tests/unit`, `tests/api`, `tests/smoke`, los marcadores en `pytest.ini` y el `conftest.py`.
 
-## Sesión síncrona (50 min)
+## Clase 3 (60 min)
 
 | Min | Actividad | Mensaje clave |
 |---|---|---|
@@ -22,6 +25,7 @@ Usar la pirámide de pruebas para decidir qué probar y dónde, separar las bate
 | 18–28 | Marcadores, fixtures y el `conftest.py` que aísla cada prueba | Una prueba que depende de otra es una prueba frágil |
 | 28–40 | Demo: dividir el pipeline en jobs `unit` y `api` en paralelo con informes JUnit | Paralelizar acorta el feedback |
 | 40–50 | Laboratorio: elegir una historia del backlog | — |
+| 50–60 | Dudas sobre la **actividad 1** (entrega según el aula) | Fork, rama, commit, PR: origen y destino claros |
 
 ## Laboratorio
 
@@ -62,7 +66,7 @@ Publica los XML con `actions/upload-artifact` y, si quieres verlos en el resumen
 - **Cuarentena** (Tema 5.4): marca una prueba como `@pytest.mark.skip(reason=...)` con un issue asociado y explica cuándo se justifica.
 - Ejecuta los smoke tests contra tu API local: `make run` en una terminal y `make smoke` en otra.
 
-## Evidencia de la semana
+## Evidencia de la semana (en tu bitácora; no se entrega)
 
 - PR de la historia con pruebas unitarias y de API.
 - Run del pipeline con informes JUnit publicados.

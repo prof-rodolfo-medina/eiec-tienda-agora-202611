@@ -1,86 +1,42 @@
-# Semana 8 · 25 – 31 de enero de 2027
+# Semana 8 · 25 – 29 de enero de 2027
 
-**Tema:** T10 Modelos de despliegue (II): rolling, blue/green, canary, feature flags, rollback · Cierre del curso
-**Sesión síncrona (propuesta):** martes 26 de enero, adelantada para no coincidir con el examen
-**Examen final:** jueves 28 o viernes 29 de enero
-**Pregunta guía:** ¿Cómo expones una versión nueva a usuarios reales limitando el daño si sale mal?
+**Tema:** Repaso de los Temas 1 a 10 · Examen final
+**Clase 8:** repaso y simulacro del examen en Wooclap (90 min) · día y hora: consulta el aula virtual
+**Examen final:** esta semana; fecha, hora y condiciones **en el aula virtual**
+**Pregunta guía:** ¿Puedes recorrer tu pipeline de izquierda a derecha y nombrar el tema que explica cada pieza?
+
+> Las fechas vigentes son siempre las del aula. Dudas: foro "Pregúntale a tu profesor".
 
 ## Propósito
 
-Practicar modelos de despliegue que separan *desplegar* de *liberar*, cerrar el proyecto y dejar la nube limpia **antes del examen**. La semana está organizada para que el trabajo práctico termine el miércoles 27 y el resto del tiempo quede para estudiar.
+Consolidar el temario completo antes del examen, detectar los temas con más dudas mediante un simulacro y cerrar el proyecto dejando la nube limpia. Esta semana **no hay laboratorio nuevo**: el tiempo es para estudiar.
 
-| Día | Qué pasa |
-|---|---|
-| Lunes 25 | Guía publicada; cada equipo graba su demostración final |
-| Martes 26 | Sesión síncrona: modelos de despliegue y repaso para el examen |
-| Miércoles 27 | Fecha límite: video de la demo, diagnóstico de madurez final y limpieza de nube en la bitácora |
-| Jueves 28 o viernes 29 | **Examen final** |
+## Antes de la clase
 
-## Antes de la sesión
+- Repasar la [guía de repaso](repaso-examen.md) y traer dudas concretas.
+- Leer la guía del [simulacro en Wooclap](simulacro-wooclap.md) y tener a mano el celular o un navegador.
+- Avanzar los microtests pendientes (cierran el 31/01/2027; consulta el aula).
 
-- Tema 10: 10.3 (modelos de despliegue), 10.4 (feature flags) y 10.5 (actualización incremental en Kubernetes).
-- Tener al menos dos versiones de la imagen en GHCR (por ejemplo `1.0.0` y `1.1.0`).
-- Revisar la [guía de repaso para el examen](repaso-examen.md) y traer dudas.
-
-## Sesión síncrona (50 min)
+## Clase 8 (90 min)
 
 | Min | Actividad | Mensaje clave |
 |---|---|---|
-| 0–10 | Rolling update, blue/green, canary, *dark launch* | Cada modelo compra seguridad con recursos o con tiempo |
-| 10–20 | Demo: canary al 10 % en Container Apps, promoción y rollback | El tráfico se mueve; los binarios no se tocan |
-| 20–25 | Demo: feature flag encendido en producción sin redeploy | Desplegar es técnico; liberar es una decisión de negocio |
-| 25–45 | **Repaso para el examen**: el recorrido completo del curso sobre el pipeline de Tienda Ágora y dudas | Cada tema dejó una pieza del pipeline |
-| 45–50 | Cierre del curso y recordatorio de la limpieza de nube | Lo que no se apaga, cobra |
+| 0–10 | Bienvenida, reglas del simulacro y conexión a Wooclap con un alias | Es un ensayo: equivocarse hoy es barato |
+| 10–25 | **Simulacro · Ronda 1** (T1–T4): 7 preguntas, explicación tras cada una, clasificación | Integrar, entregar y desplegar no son sinónimos |
+| 25–40 | **Simulacro · Ronda 2** (T5–T7): 7 preguntas, explicación, clasificación | Las pruebas y la calidad son llaves de paso |
+| 40–55 | **Simulacro · Ronda 3** (T8–T10): 6 preguntas, explicación, clasificación final | Se construye una vez y se promueve |
+| 55–80 | Repaso dirigido: los temas con menor acierto, sobre el pipeline de Tienda Ágora | Cada tema dejó una pieza del pipeline |
+| 80–90 | Cierre del curso: recordatorios del aula, limpieza de la nube, diagnóstico final | Lo que no se apaga, cobra |
 
-## Laboratorio
+## Cierre del proyecto (opcional, recomendado antes del examen)
 
-El nivel base es corto a propósito: se completa en una o dos horas.
+Una o dos horas como máximo:
 
-### Nivel base (fecha límite: miércoles 27)
+1. **Diagnóstico de madurez final** en la bitácora, con la misma tabla de la semana 1 y evidencia por dimensión. Compara con las semanas 1 y 4.
+2. **Limpieza de la nube**: elimina los recursos de Azure (`ALIAS=<alias> bash infra/azure/limpiar.sh`) y termina las instancias de AWS. Deja constancia en la bitácora.
+3. **Retrospectiva** en tres líneas: lo que mejoró, lo que más costó y la siguiente mejora que harías.
 
-1. **Feature flag en producción**: enciende `FEATURE_DISCOUNT_CODES` en producción (App Service → *Environment variables* o `az webapp config appsettings set`) y verifica que el comportamiento cambia sin un despliegue nuevo. Apágalo y verifica de nuevo.
-2. **Demostración final en video** (3–4 minutos, ver abajo), enlazada en la bitácora.
-3. **Diagnóstico de madurez final** en la bitácora, con la misma tabla de la semana 1 y evidencia por dimensión.
-4. **Limpieza**: elimina los recursos de Azure (`ALIAS=<alias> bash infra/azure/limpiar.sh`) y termina las instancias de AWS. Deja constancia en la bitácora.
-
-### Nivel intermedio — canary con Azure Container Apps
-
-Desde Azure Cloud Shell (no requiere identidades en Entra ID):
-
-```bash
-export ALIAS=<alias> IMAGE_REPO=ghcr.io/<usuario>/eiec-tienda-agora-202611
-bash infra/azure/containerapps-canary.sh setup 1.0.0     # una vez
-bash infra/azure/containerapps-canary.sh canary 1.1.0 10 # 10 % a la nueva versión
-for i in $(seq 1 20); do curl -s https://<fqdn>/version; echo; done   # observa la mezcla
-bash infra/azure/containerapps-canary.sh promote          # o: rollback
-```
-
-Explica en la bitácora qué métrica observarías en un sistema real para decidir entre *promote* y *rollback*. Si lo haces, incluye el canary en tu video.
-
-### Nivel avanzado
-
-- **Rollback cronometrado**: publica `v1.1.0` con un cambio visible, despliégalo y vuelve a `1.0.0` re-ejecutando el run anterior. Anota el tiempo.
-- Ejecuta el canary desde el pipeline con `pipelines/github-actions/semana-08-canary-containerapps.yml` (requiere inicio de sesión OIDC; ver [nube/azure.md](../nube/azure.md#opcional-inicio-de-sesión-oidc-para-container-apps)).
-- **Blue/green** con etiquetas de revisión de Container Apps: dos revisiones (`blue`, `green`), una con 0 % de tráfico accesible por su URL de etiqueta para probarla antes del cambio.
-- **Rolling update en Kubernetes** (caso 10.5) con `kind` dentro de un Codespace: `Deployment` de 5 réplicas y `kubectl rollout status` / `rollout undo`.
-
-## Demostración final en video (3–4 minutos por equipo)
-
-Graba la pantalla (Teams, OBS, Loom o similar) mostrando:
-
-1. Un commit pequeño en una rama.
-2. El PR con todos los checks (fase de commit + quality gate) y una revisión.
-3. La fusión, la imagen o paquete generado y su versión.
-4. Staging → aprobación → producción, y `/version` coincidiendo con el commit.
-5. Una cosa de la que estén orgullosos y una deuda que dejarían anotada.
-
-Si los recursos de nube ya no están disponibles, muestra el pipeline con el Plan B o los runs anteriores: lo que se evalúa es que expliquen el flujo, no que todo esté encendido.
-
-## Evidencia de la semana (miércoles 27)
-
-- Enlace al video de la demo final en la bitácora.
-- Diagnóstico de madurez final con comparación frente a la semana 1.
-- Constancia de recursos de nube eliminados.
+Para quien quiera seguir después del curso: los retos de canary, blue/green y rolling update de la [semana 7](semana-07.md#nivel-avanzado--canary-con-azure-container-apps) y el [backlog](../proyecto/enunciado.md#backlog).
 
 ## Preguntas para reflexionar
 
@@ -89,6 +45,8 @@ Si los recursos de nube ya no están disponibles, muestra el pipeline con el Pla
 
 ## Notas para el docente
 
-- Publicar el lunes 25 un anuncio con las tres fechas de la semana: sesión del martes, entrega del miércoles y examen.
-- En el repaso, recorrer el pipeline de Tienda Ágora de izquierda a derecha y pedir para cada pieza el tema que la explica: es una buena forma de conectar la práctica con el examen.
-- Revisar las constancias de limpieza de nube el miércoles 27 o jueves 28.
+- Publicar el lunes en el aula un anuncio con la fecha de la clase 8, el examen y el recordatorio de microtests.
+- Preparar el evento de Wooclap con al menos un día de anticipación: *Settings → Interactivity → Competition mode* activado y la opción de mostrar la clasificación automáticamente desactivada (se muestra al final de cada ronda con el trofeo).
+- Probar el enlace del evento desde un celular. Compartir pantalla en Zoom con el modo presentación de Wooclap.
+- Tras la clase, descargar el informe de Wooclap (resultados por pregunta) para identificar los temas débiles y, si conviene, publicar en el aula un aviso con las lecturas recomendadas.
+- El banco de preguntas del simulacro **no se publica** en este repositorio.

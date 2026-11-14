@@ -1,6 +1,7 @@
 # Guía de repaso para el examen final
 
-**Examen:** jueves 28 o viernes 29 de enero de 2027 (semana 8)
+**Examen:** semana 8 (25 – 29 de enero de 2027). Fecha, hora y condiciones: **consulta el aula virtual**.
+**Antes del examen:** [simulacro en Wooclap](simulacro-wooclap.md) durante la clase 8.
 
 El examen evalúa el temario de la asignatura (Temas 1 a 10). Esta guía conecta cada tema con lo que construiste en Tienda Ágora: si puedes explicar **por qué** tu pipeline tiene cada pieza, tienes buena parte del repaso hecho. Para cada tema: las ideas clave, dónde las aplicaste y preguntas para autoevaluarte.
 
