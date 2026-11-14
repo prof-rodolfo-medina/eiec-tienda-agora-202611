@@ -4,6 +4,7 @@
 **Clase 1** y presentación del curso (90 min) · día y hora: consulta el aula virtual
 **En el aula esta semana:** microtests 1.1–1.6 y 2.1–2.6
 **Pregunta guía:** ¿Qué le falta a Tienda Ágora para poder entregarse con confianza cualquier día?
+**Resumen de la clase 1:** [sesiones/sesion-01.md](../sesiones/sesion-01.md)
 
 > Las fechas vigentes son siempre las del aula virtual. Dudas: foro "Pregúntale a tu profesor".
 
