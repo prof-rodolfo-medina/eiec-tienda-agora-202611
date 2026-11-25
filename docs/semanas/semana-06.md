@@ -1,7 +1,7 @@
 # Semana 6 · 11 – 15 de enero de 2027
 
 **Temas:** T8 GitLab · T9 Otras herramientas de CI/CD (registros de artefactos)
-**Clase 6** (60 min) · día y hora: consulta el aula virtual
+**Clase 6** (60 min) · **jueves 14 de enero de 2027, 20:00 h** (si hay cambios, vale el aula)
 **En el aula esta semana:** microtests 8.1–8.4 y 9.1–9.6 · actividad 2 en curso
 **Pregunta guía:** ¿Qué es exactamente lo que se despliega, y cómo sé de qué commit salió?
 

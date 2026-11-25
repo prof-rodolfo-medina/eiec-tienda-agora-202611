@@ -1,7 +1,7 @@
 # Semana 2 · 30 de noviembre – 4 de diciembre de 2026
 
 **Temas:** T3 Flujos de trabajo con Git · T4 Fases de la entrega continua
-**Clase 2** y presentación de la actividad 1 (60 min) · día y hora: consulta el aula virtual
+**Clase 2** y presentación de la actividad 1 (60 min) · **jueves 3 de diciembre de 2026, 20:00 h** (si hay cambios, vale el aula)
 **En el aula esta semana:** se publica la **actividad 1** (pull requests en GitHub) · microtests 3.1–3.4 y 4.1–4.5
 **Pregunta guía:** ¿Qué tiene que pasar para que un cambio pueda entrar en `main`?
 **Resumen de la clase 2:** [sesiones/sesion-02.md](../sesiones/sesion-02.md)

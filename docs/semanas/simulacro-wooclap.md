@@ -1,6 +1,6 @@
 # Simulacro del examen final en Wooclap (clase 8)
 
-**Cuándo:** durante la clase 8 (semana del 25 al 29 de enero de 2027). Día y hora en el aula virtual.
+**Cuándo:** durante la clase 8, que se programará entre el lunes 25 y el miércoles 27 de enero de 2027, según la disponibilidad del grupo y del docente; el día y la hora se publicarán en el aula.
 **Formato:** Wooclap en **modo competición**, en vivo durante la clase por Zoom.
 **Calificación:** **ninguna.** Es un ensayo para que identifiques qué temas repasar.
 

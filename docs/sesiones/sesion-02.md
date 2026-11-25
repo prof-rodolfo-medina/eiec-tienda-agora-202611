@@ -1,6 +1,6 @@
 # Clase 2 · Flujos con Git, fases de la entrega continua y actividad 1
 
-**Semana 2 · 30 de noviembre – 4 de diciembre de 2026** · Clase por Zoom, 60 min · Día y hora: **consulta el aula virtual**
+**Semana 2 · 30 de noviembre – 4 de diciembre de 2026** · Clase por Zoom, 60 min · **Jueves 3 de diciembre de 2026, 20:00 h**
 **Guía de la semana:** [semana-02.md](../semanas/semana-02.md)
 **Pregunta guía:** ¿Qué tiene que pasar para que un cambio pueda entrar en `main`?
 
@@ -122,4 +122,4 @@ Más en [actividades](../actividades/README.md).
 
 ## Próxima clase
 
-Clase 3 (60 min): Tema 5 (pruebas). La pirámide aplicada a Tienda Ágora y las baterías `unit` y `api` en jobs paralelos con informes JUnit; los últimos 10 minutos, dudas de la actividad 1. Lectura previa: Tema 5 (5.3 a 5.5). Ven con `main` protegida.
+Clase 3 (jueves 10 de diciembre, 20:00 h, 60 min): Tema 5 (pruebas). La pirámide aplicada a Tienda Ágora y las baterías `unit` y `api` en jobs paralelos con informes JUnit; los últimos 10 minutos, dudas de la actividad 1. Lectura previa: Tema 5 (5.3 a 5.5). Ven con `main` protegida.
