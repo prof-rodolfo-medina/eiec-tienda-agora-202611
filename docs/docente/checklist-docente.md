@@ -11,7 +11,9 @@
 
 ### Aula y coordinación
 
-- [ ] Confirmar día y hora de las ocho clases síncronas y la fecha del examen final (semana 8).
+- [x] Día y hora de las clases: jueves a las 20:00 h (clases 1 a 7).
+- [ ] Acordar con el grupo el día y la hora de la clase 8 (entre el lunes 25 y el miércoles 27 de enero) y publicarlo en el aula.
+- [ ] Confirmar la fecha del examen final (semana 8).
 - [ ] Confirmar la licencia institucional de Wooclap (modo competición en vivo y número de participantes).
 - [ ] Preguntar si se puede habilitar un aula de **AWS Academy** para la asignatura.
 - [ ] Publicar en el aula: anuncio de bienvenida con el enlace al repositorio y el aviso de canal oficial (aula, foro "Pregúntale a tu profesor", Zoom).

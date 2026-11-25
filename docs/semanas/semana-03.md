@@ -1,7 +1,7 @@
 # Semana 3 · 7 – 11 de diciembre de 2026
 
 **Tema:** T5 Pruebas
-**Clase 3** (60 min) · día y hora: consulta el aula virtual
+**Clase 3** (60 min) · **jueves 10 de diciembre de 2026, 20:00 h** (si hay cambios, vale el aula)
 **En el aula esta semana:** microtests 5.1–5.5 · actividad 1 en curso
 **Pregunta guía:** Si una prueba es una promesa ejecutable, ¿qué promesas hace hoy Tienda Ágora?
 

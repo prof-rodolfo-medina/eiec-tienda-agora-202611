@@ -1,7 +1,7 @@
 # Semana 5 · 4 – 8 de enero de 2027
 
 **Tema:** T7 Jenkins
-**Clase 5** y presentación de la actividad 2 (60 min) · día y hora: consulta el aula virtual
+**Clase 5** y presentación de la actividad 2 (60 min) · **jueves 7 de enero de 2027, 20:00 h** (si hay cambios, vale el aula)
 **En el aula esta semana:** se publica la **actividad 2** (primer servidor de Jenkins y primer pipeline) · microtests 7.1–7.5
 **Pregunta guía:** Si cambio de herramienta, ¿qué se conserva del pipeline y qué cambia?
 

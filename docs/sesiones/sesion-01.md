@@ -1,6 +1,6 @@
 # Clase 1 · Presentación del curso, Tema 1 y Tema 2
 
-**Semana 1 · 23 – 27 de noviembre de 2026** · Clase por Zoom, 90 min · Día y hora: **consulta el aula virtual**
+**Semana 1 · 23 – 27 de noviembre de 2026** · Clase por Zoom, 90 min · **Jueves 26 de noviembre de 2026, 20:00 h**
 **Guía de la semana:** [semana-01.md](../semanas/semana-01.md)
 
 > Las fechas vigentes son siempre las del aula. Las actividades se entregan en el aula. Contacto: foro "Pregúntale a tu profesor" y las clases por Zoom. Este repositorio es complementario y no es canal de contacto.
@@ -88,4 +88,4 @@ git bisect reset
 
 ## Próxima clase
 
-Clase 2 (60 min): Tema 3 (flujos con Git) y Tema 4 (fases de la entrega continua), y presentación de la actividad 1. En Tienda Ágora: `main` protegida con un check obligatorio, un PR rojo bloqueado y uno verde fusionado. Ven con tu fork funcionando y el CI en verde.
+Clase 2 (jueves 3 de diciembre, 20:00 h, 60 min): Tema 3 (flujos con Git) y Tema 4 (fases de la entrega continua), y presentación de la actividad 1. En Tienda Ágora: `main` protegida con un check obligatorio, un PR rojo bloqueado y uno verde fusionado. Ven con tu fork funcionando y el CI en verde.

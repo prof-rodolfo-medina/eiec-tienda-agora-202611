@@ -15,19 +15,19 @@ Es el **proyecto conductor** del curso: cada estudiante o equipo hace fork y lo 
 
 ## Calendario
 
-Según la programación semanal del aula. Día y hora de cada clase: **consulta el aula**.
+Según la programación semanal del aula. **Clases por Zoom los jueves a las 20:00 h**, excepto la clase 8, que se programará entre el lunes 25 y el miércoles 27 de enero de 2027, según la disponibilidad del grupo y del docente; el día y la hora se publicarán en el aula. Si hay cambios, vale lo que diga el aula.
 
 | Sem. | Fechas | Temas | Clase | En el aula | En Tienda Ágora… | Guía |
 |---|---|---|---|---|---|---|
-| 1 | 23 – 27 nov | T1 Introducción · T2 Control de versiones | Clase 1 y presentación (90 min) | Microtests T1–T2 | Fork, entorno, diagnóstico de madurez, `git bisect` | [semana-01](docs/semanas/semana-01.md) |
-| 2 | 30 nov – 4 dic | T3 Flujos con Git · T4 Fases de la entrega continua | Clase 2 y presentación act. 1 (60 min) | **Actividad 1** · Microtests T3–T4 | `main` protegida, fase de commit, PR rojo/verde | [semana-02](docs/semanas/semana-02.md) |
-| 3 | 7 – 11 dic | T5 Pruebas | Clase 3 (60 min) | Microtests T5 | Historia del backlog con pruebas; baterías separadas | [semana-03](docs/semanas/semana-03.md) |
-| 4 | 14 – 18 dic | T6 Calidad del código | Clase 4 y resolución act. 1 (90 min) | **Entrega act. 1** · Microtests T6 | Quality gate, revisión entre pares | [semana-04](docs/semanas/semana-04.md) |
+| 1 | 23 – 27 nov | T1 Introducción · T2 Control de versiones | Clase 1 · jue 26 nov · presentación (90 min) | Microtests T1–T2 | Fork, entorno, diagnóstico de madurez, `git bisect` | [semana-01](docs/semanas/semana-01.md) |
+| 2 | 30 nov – 4 dic | T3 Flujos con Git · T4 Fases de la entrega continua | Clase 2 · jue 3 dic · presentación act. 1 (60 min) | **Actividad 1** · Microtests T3–T4 | `main` protegida, fase de commit, PR rojo/verde | [semana-02](docs/semanas/semana-02.md) |
+| 3 | 7 – 11 dic | T5 Pruebas | Clase 3 · jue 10 dic (60 min) | Microtests T5 | Historia del backlog con pruebas; baterías separadas | [semana-03](docs/semanas/semana-03.md) |
+| 4 | 14 – 18 dic | T6 Calidad del código | Clase 4 · jue 17 dic · resolución act. 1 (90 min) | **Entrega act. 1** · Microtests T6 | Quality gate, revisión entre pares | [semana-04](docs/semanas/semana-04.md) |
 | — | 21 dic – 3 ene | **Periodo no lectivo** | — | — | Solo opcional | [receso](docs/semanas/receso.md) |
-| 5 | 4 – 8 ene | T7 Jenkins | Clase 5 y presentación act. 2 (60 min) | **Actividad 2** · Microtests T7 | El mismo pipeline como Jenkinsfile | [semana-05](docs/semanas/semana-05.md) |
-| 6 | 11 – 15 ene | T8 GitLab · T9 Artefactos | Clase 6 (60 min) | Microtests T8–T9 | Imagen única versionada en GHCR; GitLab CI | [semana-06](docs/semanas/semana-06.md) |
-| 7 | 18 – 22 ene | T10 Modelos de despliegue | Clase 7 y resolución act. 2 (90 min) | **Entrega act. 2** · Microtests T10 | Staging → aprobación → producción; feature flags; marcha atrás | [semana-07](docs/semanas/semana-07.md) |
-| 8 | 25 – 29 ene | Repaso | Clase 8: repaso y **simulacro en Wooclap** (90 min) | **Examen final** | Diagnóstico final y limpieza de la nube | [semana-08](docs/semanas/semana-08.md) · [simulacro](docs/semanas/simulacro-wooclap.md) · [repaso](docs/semanas/repaso-examen.md) |
+| 5 | 4 – 8 ene | T7 Jenkins | Clase 5 · jue 7 ene · presentación act. 2 (60 min) | **Actividad 2** · Microtests T7 | El mismo pipeline como Jenkinsfile | [semana-05](docs/semanas/semana-05.md) |
+| 6 | 11 – 15 ene | T8 GitLab · T9 Artefactos | Clase 6 · jue 14 ene (60 min) | Microtests T8–T9 | Imagen única versionada en GHCR; GitLab CI | [semana-06](docs/semanas/semana-06.md) |
+| 7 | 18 – 22 ene | T10 Modelos de despliegue | Clase 7 · jue 21 ene · resolución act. 2 (90 min) | **Entrega act. 2** · Microtests T10 | Staging → aprobación → producción; feature flags; marcha atrás | [semana-07](docs/semanas/semana-07.md) |
+| 8 | 25 – 29 ene | Repaso | Clase 8 · entre lun 25 y mié 27 ene, por confirmar · repaso y **simulacro en Wooclap** (90 min) | **Examen final** | Diagnóstico final y limpieza de la nube | [semana-08](docs/semanas/semana-08.md) · [simulacro](docs/semanas/simulacro-wooclap.md) · [repaso](docs/semanas/repaso-examen.md) |
 
 - Cómo se relaciona el proyecto con las actividades evaluables: **[docs/actividades](docs/actividades/README.md)**.
 - Plan completo (resultados de aprendizaje, enfoque, nube, riesgos): **[docs/plan-del-curso.md](docs/plan-del-curso.md)**.
