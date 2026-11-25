@@ -49,6 +49,8 @@ make lint test                   # o: flake8 app tests && python -m pytest -q
 make run                         # http://127.0.0.1:8000/docs
 ```
 
+¿Primera vez con la terminal, Git o Python? Lee antes la **[guía de la terminal y Git](docs/guias/terminal-y-git.md)** (Windows con Git Bash, Linux, macOS, VS Code y Codespaces).
+
 Después: habilita **Actions** en tu fork, completa [`BITACORA.md`](BITACORA.md) y sigue la [guía de la semana 1](docs/semanas/semana-01.md).
 
 ## La aplicación
@@ -82,6 +84,7 @@ scripts/                      smoke test de despliegue y laboratorio de git bise
 docs/
 ├── plan-del-curso.md         planeación completa
 ├── actividades/              cómo se conecta el proyecto con las actividades del aula
+├── guias/                    guía de la terminal y Git (Windows, Linux, macOS, VS Code)
 ├── semanas/                  guía de cada semana, receso, repaso y simulacro Wooclap
 ├── sesiones/                 resumen de cada clase por Zoom: objetivos, agenda y tareas
 ├── proyecto/                 enunciado, backlog, equipos y rúbrica formativa
