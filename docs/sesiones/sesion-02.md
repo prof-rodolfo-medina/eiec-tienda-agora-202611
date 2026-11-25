@@ -79,7 +79,7 @@ gh pr merge --repo TU_USUARIO/eiec-tienda-agora-202611 --squash --delete-branch 
 > [!WARNING]
 > En un fork, tanto el botón **Compare & pull request** como `gh pr create` proponen por omisión el repositorio del curso como destino. Cambia *base repository* a tu fork o usa `--repo`. Los PR se abren **dentro de tu fork**.
 
-Cómo leer el log del PR rojo: paso en rojo → prueba que falló → línea `E` (esperado frente a obtenido) → archivo y línea. Por ejemplo:
+Cómo leer el log del PR rojo: paso en rojo → prueba que falló → línea `E` (esperado frente a obtenido) → archivo y línea. Por ejemplo (salida real de `pytest` en el repositorio, 24/11/2026):
 
 ```text
 E       AssertionError: assert {'status': 'fail'} == {'status': 'ok'}
@@ -88,6 +88,8 @@ FAILED tests/api/test_api.py::test_health_endpoint_returns_ok - AssertionErro...
 ```
 
 ## Laboratorio (resumen)
+
+Tienda Ágora es formativo: no se entrega ni suma puntos. Puedes trabajarlo individualmente o en equipo, y la evidencia va en tu `BITACORA.md`.
 
 - **Base:** `main` protegida; PR rojo bloqueado y cerrado sin fusionar; PR verde fusionado.
 - **Intermedio:** compilación única: empaquetar la app una vez y publicarla como artefacto con el SHA en el nombre.
@@ -118,7 +120,7 @@ Más en [actividades](../actividades/README.md).
 - [ ] Leer el enunciado de la actividad 1 en el aula (entregables y fecha: consulta el aula).
 - [ ] Microtests del aula: Tema 3 (3.1 a 3.4) y Tema 4 (4.1 a 4.5). Fecha de cierre: consulta el aula.
 
-**Pregunta de reflexión:** ¿Qué ventaja y qué costo tiene ejecutar el pipeline sobre el PR y otra vez sobre `main`? Respóndela en la entrada de la semana 2 de tu bitácora.
+**Pregunta de reflexión:** ¿Qué ventaja y qué costo tiene ejecutar el pipeline sobre el PR y otra vez sobre `main`? Respóndela en la entrada de la semana 2 de tu bitácora. Y una segunda para pensar en equipo: ¿quién debería ser "dueño" de la fase de commit y por qué?
 
 ## Próxima clase
 
