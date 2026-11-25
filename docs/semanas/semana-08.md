@@ -1,7 +1,7 @@
 # Semana 8 · 25 – 29 de enero de 2027
 
 **Tema:** Repaso de los Temas 1 a 10 · Examen final
-**Clase 8:** repaso y simulacro del examen en Wooclap (90 min) · día y hora: consulta el aula virtual
+**Clase 8:** repaso y simulacro del examen en Wooclap (90 min) · **esta semana no es en jueves:** se programará entre el lunes 25 y el miércoles 27 de enero de 2027, según la disponibilidad del grupo y del docente; el día y la hora se publicarán en el aula
 **Examen final:** esta semana; fecha, hora y condiciones **en el aula virtual**
 **Pregunta guía:** ¿Puedes recorrer tu pipeline de izquierda a derecha y nombrar el tema que explica cada pieza?
 

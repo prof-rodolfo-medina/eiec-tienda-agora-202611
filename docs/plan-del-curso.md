@@ -57,19 +57,19 @@ Reglas de convivencia entre proyecto y actividades:
 
 ## 5. Calendario
 
-Semanas y clases según la programación semanal del aula. **Día y hora de cada clase: consulta el aula virtual.**
+Semanas y clases según la programación semanal del aula. **Clases por Zoom los jueves a las 20:00 h** (enlace en el aula), excepto la **clase 8**, que se programará entre el lunes 25 y el miércoles 27 de enero de 2027, según la disponibilidad del grupo y del docente; el día y la hora se publicarán en el aula. Si hay cambios, vale lo que diga el aula.
 
 | Sem. | Fechas | Temas | Clase (duración) | Aula: actividades | Laboratorio en Tienda Ágora (nivel base) | Nube |
 |---|---|---|---|---|---|---|
-| 1 | 23 – 27 nov 2026 | T1 Introducción · T2 Control de versiones | **Clase 1** y presentación del curso (90 min) | Microtests 1.1–1.6 y 2.1–2.6 | Fork, entorno local o Codespace, CI verde, diagnóstico de madurez, `git bisect` | Alta en Azure for Students y AWS Educate |
-| 2 | 30 nov – 4 dic | T3 Flujos con Git · T4 Fases de la entrega continua | **Clase 2** y presentación de la actividad 1 (60 min) | **Act. 1 publicada** · Microtests 3.x y 4.x | `main` protegida, check obligatorio, PR rojo y PR verde | — |
-| 3 | 7 – 11 dic | T5 Pruebas | **Clase 3** (60 min) | Microtests 5.x · Act. 1 en curso | Historia del backlog con pruebas unitarias y de API; JUnit | — |
-| 4 | 14 – 18 dic | T6 Evaluación y calidad del código | **Clase 4** y resolución de la actividad 1 (90 min) | **Act. 1: entrega 14/12** · Microtests 6.x | Quality gate de cobertura, revisión entre pares, retrospectiva | — |
+| 1 | 23 – 27 nov 2026 | T1 Introducción · T2 Control de versiones | **Clase 1** (jue 26 nov) y presentación del curso (90 min) | Microtests 1.1–1.6 y 2.1–2.6 | Fork, entorno local o Codespace, CI verde, diagnóstico de madurez, `git bisect` | Alta en Azure for Students y AWS Educate |
+| 2 | 30 nov – 4 dic | T3 Flujos con Git · T4 Fases de la entrega continua | **Clase 2** (jue 3 dic) y presentación de la actividad 1 (60 min) | **Act. 1 publicada** · Microtests 3.x y 4.x | `main` protegida, check obligatorio, PR rojo y PR verde | — |
+| 3 | 7 – 11 dic | T5 Pruebas | **Clase 3** (jue 10 dic, 60 min) | Microtests 5.x · Act. 1 en curso | Historia del backlog con pruebas unitarias y de API; JUnit | — |
+| 4 | 14 – 18 dic | T6 Evaluación y calidad del código | **Clase 4** (jue 17 dic) y resolución de la actividad 1 (90 min) | **Act. 1: entrega 14/12** · Microtests 6.x | Quality gate de cobertura, revisión entre pares, retrospectiva | — |
 | — | 21 dic – 3 ene | **Periodo no lectivo** | — | — | Solo opcional: ponerse al día ([receso](semanas/receso.md)) | — |
-| 5 | 4 – 8 ene 2027 | T7 Jenkins | **Clase 5** y presentación de la actividad 2 (60 min) | **Act. 2 publicada** · Microtests 7.x | El mismo pipeline como Jenkinsfile | Opcional: Jenkins en VM de Azure |
-| 6 | 11 – 15 ene | T8 GitLab · T9 Otras herramientas y artefactos | **Clase 6** (60 min) | Microtests 8.x y 9.x · Act. 2 en curso | Imagen única versionada en GHCR; pipeline equivalente en GitLab | GHCR |
-| 7 | 18 – 22 ene | T10 Modelos de despliegue | **Clase 7** y resolución de la actividad 2 (90 min) | **Act. 2: entrega 18/01** · Microtests 10.x | Staging → aprobación → producción con smoke tests; feature flag; marcha atrás | **Azure** App Service F1 · **AWS** EC2 |
-| 8 | 25 – 29 ene | Repaso | **Clase 8**: repaso y **simulacro del examen en Wooclap** (90 min) | **Examen final** (fecha en el aula) · Microtests hasta el 31/01 | Cierre opcional: diagnóstico final y **limpieza de la nube** | Eliminar recursos |
+| 5 | 4 – 8 ene 2027 | T7 Jenkins | **Clase 5** (jue 7 ene) y presentación de la actividad 2 (60 min) | **Act. 2 publicada** · Microtests 7.x | El mismo pipeline como Jenkinsfile | Opcional: Jenkins en VM de Azure |
+| 6 | 11 – 15 ene | T8 GitLab · T9 Otras herramientas y artefactos | **Clase 6** (jue 14 ene, 60 min) | Microtests 8.x y 9.x · Act. 2 en curso | Imagen única versionada en GHCR; pipeline equivalente en GitLab | GHCR |
+| 7 | 18 – 22 ene | T10 Modelos de despliegue | **Clase 7** (jue 21 ene) y resolución de la actividad 2 (90 min) | **Act. 2: entrega 18/01** · Microtests 10.x | Staging → aprobación → producción con smoke tests; feature flag; marcha atrás | **Azure** App Service F1 · **AWS** EC2 |
+| 8 | 25 – 29 ene | Repaso | **Clase 8** (entre lun 25 y mié 27 ene, por confirmar): repaso y **simulacro del examen en Wooclap** (90 min) | **Examen final** (fecha en el aula) · Microtests hasta el 31/01 | Cierre opcional: diagnóstico final y **limpieza de la nube** | Eliminar recursos |
 
 Guías: [semana 1](semanas/semana-01.md) · [2](semanas/semana-02.md) · [3](semanas/semana-03.md) · [4](semanas/semana-04.md) · [receso](semanas/receso.md) · [5](semanas/semana-05.md) · [6](semanas/semana-06.md) · [7](semanas/semana-07.md) · [8](semanas/semana-08.md) · [repaso](semanas/repaso-examen.md) · [simulacro Wooclap](semanas/simulacro-wooclap.md) · [actividades del aula](actividades/README.md)
 
@@ -156,7 +156,7 @@ En el repositorio no hay *issues*, *discussions* ni correo de contacto del profe
 
 ## 12. Pendientes de confirmar con la coordinación
 
-- Día y hora de las ocho clases síncronas.
+- ~~Día y hora de las clases síncronas.~~ Confirmado: jueves a las 20:00 h (clases 1 a 7). La clase 8 se programará entre el lunes 25 y el miércoles 27 de enero según la disponibilidad del grupo y del docente.
 - Fecha y hora del examen final (semana 8) y si hay restricción para hacer el simulacro en la clase 8.
 - Licencia institucional de Wooclap (el modo competición en vivo y el número de participantes dependen del plan).
 - Si la institución puede habilitar un aula de AWS Academy para la asignatura.

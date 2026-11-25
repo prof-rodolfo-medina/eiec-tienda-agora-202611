@@ -1,7 +1,7 @@
 # Semana 1 · 23 – 27 de noviembre de 2026
 
 **Temas:** T1 Introducción a la integración y entrega continuas · T2 Control de versiones
-**Clase 1** y presentación del curso (90 min) · día y hora: consulta el aula virtual
+**Clase 1** y presentación del curso (90 min) · **jueves 26 de noviembre de 2026, 20:00 h** (si hay cambios, vale el aula)
 **En el aula esta semana:** microtests 1.1–1.6 y 2.1–2.6
 **Pregunta guía:** ¿Qué le falta a Tienda Ágora para poder entregarse con confianza cualquier día?
 **Resumen de la clase 1:** [sesiones/sesion-01.md](../sesiones/sesion-01.md)

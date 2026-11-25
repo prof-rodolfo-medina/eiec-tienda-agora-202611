@@ -1,7 +1,7 @@
 # Semana 7 · 18 – 22 de enero de 2027
 
 **Tema:** T10 Modelos de despliegue: entrega continua hacia la nube, feature flags, canary y marcha atrás
-**Clase 7** y resolución de la actividad 2 (90 min) · día y hora: consulta el aula virtual
+**Clase 7** y resolución de la actividad 2 (90 min) · **jueves 21 de enero de 2027, 20:00 h** (si hay cambios, vale el aula)
 **En el aula esta semana:** **entrega de la actividad 2** (según la programación, 18/01) · microtests 10.1–10.5
 **Pregunta guía:** ¿Qué tendría que pasar para que despliegues a producción un viernes por la tarde sin miedo?
 

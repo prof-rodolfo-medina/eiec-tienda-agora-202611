@@ -1,7 +1,7 @@
 # Semana 4 · 14 – 18 de diciembre de 2026
 
 **Tema:** T6 Evaluación y calidad del código
-**Clase 4** y resolución de la actividad 1 (90 min) · día y hora: consulta el aula virtual
+**Clase 4** y resolución de la actividad 1 (90 min) · **jueves 17 de diciembre de 2026, 20:00 h** (si hay cambios, vale el aula)
 **En el aula esta semana:** **entrega de la actividad 1** (según la programación, 14/12) · microtests 6.1–6.8
 **Pregunta guía:** ¿Debe fusionarse un PR que pasa las pruebas pero baja la cobertura?
 
