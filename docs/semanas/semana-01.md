@@ -19,7 +19,7 @@ Arrancar con el entorno listo, el proyecto en las manos de cada equipo y un diag
    - GitHub (personal).
    - **Azure for Students**: <https://azure.microsoft.com/es-es/free/students/> (sin tarjeta). Ver [nube/azure.md](../nube/azure.md).
    - **AWS Educate**: <https://aws.amazon.com/es/education/awseducate/>. Ver [nube/aws.md](../nube/aws.md).
-3. Elegir entorno de trabajo: equipo propio (Git, Python 3.12, VS Code) **o** GitHub Codespaces (no requiere instalar nada).
+3. Elegir entorno de trabajo: equipo propio (Git, Python 3.12, VS Code) **o** GitHub Codespaces (no requiere instalar nada). Si es tu primera vez con la terminal, sigue la [guía de la terminal y Git](../guias/terminal-y-git.md).
 
 > Las altas en la nube pueden tardar. Hacerlas esta semana evita bloqueos en las semanas 6 y 7.
 
