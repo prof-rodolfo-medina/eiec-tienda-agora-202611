@@ -6,25 +6,25 @@ Las demostraciones en vivo se hacen en un **fork de demostración**, nunca en el
 
 GitHub no permite hacer fork de un repositorio a la misma cuenta que lo posee, por eso el fork se hace en una **organización gratuita** del docente (no en una segunda cuenta personal: el plan gratuito admite una cuenta por persona).
 
-- [ ] Crear la organización: foto de perfil → **Your organizations → New organization → Free**. Nombre sugerido: `eiec-demo`.
-- [ ] En el repositorio del curso: **Fork → Owner: `eiec-demo`** → conservar el nombre `eiec-tienda-agora-202611` → **Create fork**.
+- [x] Organización de demostración: **`Darth-Side-Apps`** (creada con foto de perfil → **Your organizations → New organization → Free**).
+- [ ] En el repositorio del curso: **Fork → Owner: `Darth-Side-Apps`** → conservar el nombre `eiec-tienda-agora-202611` → **Create fork**.
 - [ ] En el fork: pestaña **Actions → I understand my workflows, go ahead and enable them**; lanzar una vez **CI - fase de commit → Run workflow** y comprobar que termina en verde (así `commit-stage` aparece al crear el ruleset en la clase 2).
 
 ## 2. Entorno local con VS Code (una sola vez)
 
 ```bash
 mkdir -p ~/demos && cd ~/demos
-git clone https://github.com/eiec-demo/eiec-tienda-agora-202611.git
+git clone https://github.com/Darth-Side-Apps/eiec-tienda-agora-202611.git
 cd eiec-tienda-agora-202611
 git remote add upstream https://github.com/prof-rodolfo-medina/eiec-tienda-agora-202611.git
-gh repo set-default eiec-demo/eiec-tienda-agora-202611   # gh pr create apuntará al fork
+gh repo set-default Darth-Side-Apps/eiec-tienda-agora-202611   # gh pr create apuntará al fork
 code .
 ```
 
 - [ ] En Windows: terminal de VS Code con perfil **Git Bash** (`Ctrl+Shift+P` → *Terminal: Select Default Profile*), como indica la [guía de la terminal](../guias/terminal-y-git.md).
 - [ ] Entorno de Python y comprobación (`make lint test` o, en Git Bash, `flake8 app tests && python -m pytest -q`).
 - [ ] `make run` (o `uvicorn app.main:app --reload`) y abrir `http://127.0.0.1:8000/docs`.
-- [ ] `git remote -v` muestra `origin` → `eiec-demo/…` y `upstream` → `prof-rodolfo-medina/…`.
+- [ ] `git remote -v` muestra `origin` → `Darth-Side-Apps/…` y `upstream` → `prof-rodolfo-medina/…`.
 
 ## 3. Presentación en Zoom (una sola vez)
 
@@ -61,7 +61,7 @@ code .
 
 ## Clase 1: la demo del fork
 
-Mostrar el botón **Fork** en el repositorio del curso hasta la ventana donde se elige el dueño, y cancelar. A partir de ahí, trabajar en el fork ya preparado de `eiec-demo`: los estudiantes ven el paso completo sin esperar en vivo.
+Mostrar el botón **Fork** en el repositorio del curso hasta la ventana donde se elige el dueño, y cancelar. A partir de ahí, trabajar en el fork ya preparado de `Darth-Side-Apps`: los estudiantes ven el paso completo sin esperar en vivo.
 
 ## Después de cada clase
 
