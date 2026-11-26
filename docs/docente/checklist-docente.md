@@ -22,12 +22,13 @@
 
 - [ ] Probar con una cuenta `@comunidadunir.net` que Azure for Students se activa y que Cloud Shell funciona.
 - [ ] Abrir un Codespace del repositorio para verificar que todo corre desde el navegador.
+- [ ] Preparar el **fork de demostración** en una organización gratuita, el entorno local con VS Code y el Codespace de respaldo: [preparacion-demos.md](preparacion-demos.md).
 - [ ] Probar `infra/azure/crear-app-service.sh` y el workflow de la semana 7 en un fork de prueba (ver "Validación pendiente").
 
 ## Cada semana
 
 - [ ] Publicar el anuncio de la semana en el aula el lunes (texto breve + enlace a `docs/semanas/semana-NN.md`). Las fechas se citan siempre desde el aula.
-- [ ] Preparar ramas de demostración (`demo/sNN-rojo`, `demo/sNN-verde`) y capturas de respaldo por si GitHub Actions tarda en vivo.
+- [ ] Sincronizar el fork de demostración y preparar sus ramas y PR de respaldo (ver [preparacion-demos.md](preparacion-demos.md#5-antes-de-cada-clase-15-minutos)), más capturas por si GitHub Actions tarda en vivo.
 - [ ] Responder dudas del proyecto solo en el foro "Pregúntale a tu profesor" o en la clase.
 
 ## Hitos
