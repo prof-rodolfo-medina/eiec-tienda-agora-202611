@@ -55,7 +55,7 @@ code .
   ```
 
 - [ ] `make lint test` en verde en local y en Actions del fork.
-- [ ] Preparar las ramas y los PR de respaldo de la semana dentro del fork (por ejemplo, en la semana 2, `semana-02/pr-rojo` y `semana-02/pr-verde`) por si Actions tarda en vivo.
+- [ ] Preparar las ramas y los PR de respaldo de la semana dentro del fork, con el prefijo `demo/` para que no choquen con las ramas que se crean en vivo (por ejemplo, en la semana 2, `demo/s2-rojo` y `demo/s2-verde`), por si Actions tarda.
 - [ ] Tener abiertas las pestañas de la clase: fork en GitHub (Actions y, si toca, *Settings → Rules*), aula virtual, Wooclap (si hay diagnóstico o simulacro) y la guía de la semana.
 - [ ] Abrir el Codespace de respaldo (tarda 1–2 minutos en arrancar).
 

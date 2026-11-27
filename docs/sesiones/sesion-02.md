@@ -58,6 +58,7 @@ git switch main && git pull
 git switch -c semana-02/pr-rojo
 # en app/main.py, el endpoint /health devuelve {"status": "fail"}
 make lint test                       # verás el fallo en local
+# Git Bash (Windows, sin make): flake8 app tests && python -m pytest -q
 git commit -am "Rompe /health a propósito (PR rojo)"
 git push -u origin semana-02/pr-rojo
 gh pr create --repo TU_USUARIO/eiec-tienda-agora-202611 --base main --head semana-02/pr-rojo --fill
@@ -68,8 +69,10 @@ PR verde:
 ```bash
 git switch main && git pull
 git switch -c semana-02/pr-verde
-# un producto nuevo en app/products.py y su prueba en tests/unit/test_products.py
-make lint test
+# un producto nuevo en app/products.py y su prueba en tests/unit/test_products.py, por ejemplo:
+#   def test_catalog_includes_trunk_based_mug():
+#       assert get_product(4)["name"] == "Taza Trunk-Based"
+make lint test                       # Git Bash: flake8 app tests && python -m pytest -q
 git add -A && git commit -m "Agrega un producto al catálogo con su prueba"
 git push -u origin semana-02/pr-verde
 gh pr create --repo TU_USUARIO/eiec-tienda-agora-202611 --base main --head semana-02/pr-verde --fill

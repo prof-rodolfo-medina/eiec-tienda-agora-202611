@@ -40,6 +40,8 @@ Convertir `main` en una rama siempre desplegable: todo cambio entra por Pull Req
 2. Crea `semana-02/pr-rojo`, cambia `/health` para que devuelva `{"status": "fail"}`, abre el PR y observa cómo el check bloquea la fusión. Copia en la bitácora la línea del log que explica el fallo. Cierra el PR sin fusionar.
 3. Crea `semana-02/pr-verde` con un cambio correcto (por ejemplo, un producto nuevo en el catálogo y su prueba), espera el verde y fusiona.
 
+> En Windows con Git Bash no hay `make`: en lugar de `make lint test` usa `flake8 app tests && python -m pytest -q` (ver la [guía de la terminal](../guias/terminal-y-git.md)).
+
 ### Nivel intermedio
 
 Aplica el principio de **compilación única** (Tema 4.3) dentro de la fase de commit: añade a `ci.yml` un paso que empaquete la app una sola vez y la publique como artefacto con el SHA en el nombre.
@@ -72,5 +74,5 @@ Aplica el principio de **compilación única** (Tema 4.3) dentro de la fase de c
 
 ## Notas para el docente
 
-- Preparar en el repositorio del curso las ramas `demo/s2-rojo` y `demo/s2-verde` con sus PR abiertos por si GitHub Actions tarda.
+- Preparar en el **fork de demostración** (nunca en el repositorio del curso) las ramas de respaldo `demo/s2-rojo` y `demo/s2-verde`, con sus PR abiertos dentro del fork, por si GitHub Actions tarda. Usan nombres distintos de `semana-02/pr-rojo` y `semana-02/pr-verde`, que se crean en vivo. Ver [preparacion-demos.md](../docente/preparacion-demos.md).
 - Si un estudiante no ve el check para exigirlo, debe ejecutar el workflow al menos una vez en su fork.
