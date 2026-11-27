@@ -8,7 +8,7 @@ Resumen de cada clase por Zoom: objetivos, agenda, enlaces y tareas. Sirve para 
 | Clase | Fecha (20:00 h) | Temas | Duración | Resumen |
 |---|---|---|---|---|
 | 1 | Jueves 26 nov 2026 | Presentación del curso · T1 Introducción · T2 Control de versiones | 90 min | [sesion-01.md](sesion-01.md) |
-| 2 | Jueves 3 dic | T3 Flujos con Git · T4 Fases de la entrega continua · presentación de la actividad 1 | 60 min | Próximamente |
+| 2 | Jueves 3 dic | T3 Flujos con Git · T4 Fases de la entrega continua · presentación de la actividad 1 | 60 min | [sesion-02.md](sesion-02.md) |
 | 3 | Jueves 10 dic | T5 Pruebas | 60 min | Próximamente |
 | 4 | Jueves 17 dic | T6 Calidad del código · resolución de la actividad 1 | 90 min | Próximamente |
 | 5 | Jueves 7 ene 2027 | T7 Jenkins · presentación de la actividad 2 | 60 min | Próximamente |
